@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6cb98e31-b6cd-4655-8ee2-e22ee5bbd92a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1idP2v1m3m6fGJSNmj2l4GAlkYg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\React-project\ert\wer\src\component" />
+      <recent name="D:\React-project\TRANSFER-PERSONAL\transfer-personal\src\components\Vacansions" />
+      <recent name="D:\React-project\TRANSFER-PERSONAL\transfer-personal\src\components\Services\StickySlider" />
+      <recent name="D:\React-project\TRANSFER-PERSONAL\transfer-personal\src\components\Services" />
+      <recent name="D:\React-project\TRANSFER-PERSONAL\transfer-personal\src\components\Services\Slide" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\React-project\ert\wer\src\component\Round" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.bush.js">
+    <configuration name="Score.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/Task/Score.js" working-dir="$PROJECT_DIR$/src/Task">
+      <method v="2" />
+    </configuration>
+    <configuration name="bush.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/bush.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.bush.js" />
+        <item itemvalue="Node.js.Score.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cb98e31-b6cd-4655-8ee2-e22ee5bbd92a" name="Default Changelist" comment="" />
+      <created>1602234291590</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602234291590</updated>
+      <workItem from="1602234293309" duration="7101000" />
+      <workItem from="1602265294865" duration="5217000" />
+      <workItem from="1602327181948" duration="6199000" />
+      <workItem from="1602403822934" duration="4415000" />
+      <workItem from="1602434166037" duration="7184000" />
+      <workItem from="1602495776170" duration="9843000" />
+      <workItem from="1602506199983" duration="97000" />
+      <workItem from="1602520126064" duration="221000" />
+      <workItem from="1602761793438" duration="5288000" />
+      <workItem from="1602835496829" duration="12038000" />
+      <workItem from="1602926643784" duration="7316000" />
+      <workItem from="1602945216976" duration="2593000" />
+      <workItem from="1603114768496" duration="4519000" />
+      <workItem from="1603538101404" duration="760000" />
+      <workItem from="1603538915595" duration="14768000" />
+      <workItem from="1603649996257" duration="7240000" />
+      <workItem from="1603701281408" duration="23654000" />
+      <workItem from="1603786757103" duration="32458000" />
+      <workItem from="1603874866252" duration="19660000" />
+      <workItem from="1603961117299" duration="18424000" />
+      <workItem from="1604043258598" duration="1151000" />
+      <workItem from="1604223944281" duration="2616000" />
+      <workItem from="1604251357281" duration="57000" />
+      <workItem from="1604340495525" duration="1867000" />
+      <workItem from="1604415154511" duration="6272000" />
+      <workItem from="1604433726539" duration="131000" />
+      <workItem from="1604483818472" duration="10318000" />
+      <workItem from="1604517844867" duration="532000" />
+      <workItem from="1604566593136" duration="848000" />
+      <workItem from="1604567454704" duration="518000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="232" y="150" key="#ESLint" timestamp="1603552076868">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="232" y="150" key="#ESLint/0.0.1280.984@0.0.1280.984" timestamp="1603552076868" />
+    <state x="94" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603538469877">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="94" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1603538469877" />
+    <state x="370" y="239" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603790103373">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="370" y="239" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.984@0.0.1280.984" timestamp="1603790103373" />
+    <state x="378" y="324" key="FileChooserDialogImpl" timestamp="1604518372816">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="378" y="324" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1604518372816" />
+    <state width="1259" height="263" key="GridCell.Tab.0.bottom" timestamp="1603566987381">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1259" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1603566987381" />
+    <state width="1259" height="263" key="GridCell.Tab.0.center" timestamp="1603566987381">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1259" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1603566987381" />
+    <state width="1259" height="263" key="GridCell.Tab.0.left" timestamp="1603566987380">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1259" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1603566987380" />
+    <state width="1259" height="263" key="GridCell.Tab.0.right" timestamp="1603566987381">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1259" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1603566987381" />
+    <state x="473" y="203" key="RollbackChangesDialog" timestamp="1603789973094">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="473" y="203" key="RollbackChangesDialog/0.0.1280.984@0.0.1280.984" timestamp="1603789973094" />
+    <state x="296" y="226" key="run.anything.popup" timestamp="1604224637838">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="296" y="226" key="run.anything.popup/0.0.1280.984@0.0.1280.984" timestamp="1604224637838" />
+    <state x="390" y="336" width="672" height="678" key="search.everywhere.popup" timestamp="1602930503004">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="390" y="336" width="672" height="678" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1602930503004" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Home/Home.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Vacansions/Operator-proizvodstva/Operator-proizvodstva.js</url>
+          <line>56</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/dataSlide.js</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/component/Round/RoundThree/RoundThree.js</url>
+          <line>71</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/component/Round/RoundOne/RoundOne.js</url>
+          <line>24</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

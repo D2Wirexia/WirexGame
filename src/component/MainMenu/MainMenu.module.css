@@ -1,0 +1,54 @@
+.mainMenu{
+	width: 100%;
+	background: url("./../../library/backgroundMain.png");
+	height: calc(100vh - 250px);
+	background-size: cover;
+	position: relative;
+}
+.teams{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 300px;
+	display: flex;
+	width: 400px;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.teams *{
+	width: 400px;
+	margin-top: 10px;
+}
+.teams textarea{
+	font-size: 18px;
+	height: 30px;
+}
+.teams button{
+	height: 50px;
+	color: #0d0e0d;
+	background: rgb(152,193,210);
+	background: linear-gradient(180deg, rgb(141, 179, 195) 0%, rgba(127,171,190,1) 100%);
+	border: 2px solid #fff;
+	font-size: 24px;
+	font-family: Cambria;
+}
+.teams button:hover{
+	cursor: pointer;
+	background: rgb(62,173,219);
+	background: linear-gradient(180deg, rgba(62,173,219,1) 0%, rgba(57,153,194,1) 100%);
+	color: #fff;
+}
+
+.autograph{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	transform: rotateZ(20deg);
+	font-size: 16px;
+	color: #000;
+	font-family: Georgia;
+}
+.autograph img{
+	width: 100px;
+}
+

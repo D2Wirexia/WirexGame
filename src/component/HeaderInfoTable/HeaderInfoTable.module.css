@@ -1,0 +1,198 @@
+:root {
+	--border-size: 0.125rem;
+	--duration: 250ms;
+	--ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+	--font-family: monospace;
+	--color-primary: white;
+	--color-secondary: black;
+	--color-tertiary: dodgerblue;
+	--shadow: rgba(0, 0, 0, 0.1);
+	--space: 1rem;
+}
+* {
+	box-sizing: border-box;
+}
+
+.header{
+	background: #FF8C00;
+	height: 250px;
+	width: 100%;
+	position: relative;
+}
+.centerBlock{
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+}
+.logo{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	top: 0;
+
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+
+.arrBntRound{
+	bottom: 15px;
+	position: relative;
+}
+
+.button {
+	position: relative;
+	overflow: visible;
+	display: inline-block;
+	padding: .3em .7em;
+	border: 1px solid #d4d4d4;
+	margin: 0;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #fff;
+	font: 20px/normal sans-serif;
+	color: #333;
+	white-space: nowrap;
+	cursor: pointer;
+	outline: none;
+	background-color: #ececec;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+	background-image: -webkit-linear-gradient(#f4f4f4, #ececec);
+	background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+	background-image: -o-linear-gradient(#f4f4f4, #ececec);
+	background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+	background-image: linear-gradient(#f4f4f4, #ececec);
+	-moz-background-clip: padding;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+	zoom: 1;
+	*display: inline;
+}
+
+.button:hover,
+.button:focus{
+	border-color: #3072b3;
+	border-bottom-color: #2a65a0;
+	text-decoration: none;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+	color: #fff;
+	background-color: #3C8DDE;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+	background-image: -webkit-linear-gradient(#599bdc, #3072b3);
+	background-image: -moz-linear-gradient(#599bdc, #3072b3);
+	background-image: -o-linear-gradient(#599bdc, #3072b3);
+	background-image: -ms-linear-gradient(#599bdc, #3072b3);
+	background-image: linear-gradient(#599bdc, #3072b3);
+}
+
+.button:active,
+.button.active {
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+	color: #fff;
+	border-color: #2a65a0;
+	border-bottom-color: #3884CF;
+	background-color: #3072b3;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+	background-image: -webkit-linear-gradient(#3072b3, #599bdc);
+	background-image: -moz-linear-gradient(#3072b3, #599bdc);
+	background-image: -o-linear-gradient(#3072b3, #599bdc);
+	background-image: -ms-linear-gradient(#3072b3, #599bdc);
+	background-image: linear-gradient(#3072b3, #599bdc);
+}
+.button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.button.primary { font-weight: bold }
+
+.button.pill {
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+}
+.arrBntRound {
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+	zoom: 1;
+	display: block;
+	overflow: hidden;
+}
+.button + .button,
+.button + .arrBntRound,
+.arrBntRound + .button,
+.arrBntRound + .arrBntRound { margin-left: 15px }
+
+.arrBntRound li {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.arrBntRound .button {
+	float: left;
+	margin-left: -1px;
+}
+
+.arrBntRound > .button:not(:first-child):not(:last-child),
+.arrBntRound li:not(:first-child):not(:last-child) .button {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.arrBntRound > .button:first-child,
+.arrBntRound li:first-child .button {
+	margin-left: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.arrBntRound > .button:last-child,
+.arrBntRound li:last-child > .button {
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+
+
+
+
+
+
+
+ .red{
+	float: left;
+	position: relative;
+	top: 20px;
+	 left: 20px;
+	 color: #da2828;
+}
+.blue{
+	float: right;
+	position: relative;
+	top: 20px;
+	right: 20px;
+	color: #3136ff;
+}
+.name{
+	font-size: 42px;
+	text-align: center;
+	font-family: "Book Antiqua";
+}
+.score{
+	font-size: 92px;
+	text-align: center;
+}

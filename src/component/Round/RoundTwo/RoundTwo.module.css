@@ -1,0 +1,144 @@
+.round2{
+	position: relative;
+	height: calc(100vh - 250px);
+	width: 100%;
+	background: #070A17;
+}
+.styleBackground{
+	width: 500px;
+	height: 50px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 30px;
+	color: #070A17;
+	text-align: center;
+	font-size: 32px;
+}
+.bitImg img{
+	height: 300px;
+	border-radius: 30%;
+
+}
+.bitImg{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 1;
+}
+.messBtn{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 30px
+}
+.messBtn button{
+	margin-left: 10px;
+	width: 150px;
+	height: 40px;
+}
+.messBtn button:hover{
+	cursor: pointer;
+}
+.prev{
+	position: relative;
+	float: left;
+	opacity: .4;
+}
+.prev:hover{
+	opacity: .7;
+}
+.prev button{
+	height: calc(100vh - 250px);
+	width: 50px;
+	border: none;
+	transition: all .2s linear;
+}
+.next{
+	position: relative;
+	float: right;
+	opacity: .4;
+}
+.next:hover{
+	opacity: .7;
+}
+.next button{
+	height: calc(100vh - 250px);
+	width: 50px;
+	border: none;
+	transition: all .2s linear;
+}
+.next button i, .prev button i{
+	color: #d5d5d5;
+	transition: all .2s linear;
+	font-size: 32px;
+}
+.next button:hover i, .prev button:hover i{
+	color: #4d4d4d;
+}
+.prev button:hover, .next button:hover{
+	cursor: pointer;
+	background: #e9e9e9;
+}
+.prev button:focus, .next button:focus{
+	display: none;
+}
+.words{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.infoCountRound{
+	position: absolute;
+	bottom: 20px;
+	left: 70px;
+	font-size: 42px;
+	color: #fff;
+}
+
+.opacityPlayMus{
+	height: 50px;
+	width: 300px;
+	position: absolute;
+	border-radius: 70px;
+	top: 240px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 2;
+}
+.opacityPlayMus div{
+	z-index: 2;
+	height: 50px;
+	width: 300px;
+	position: absolute;
+	border-radius: 70px;
+	left: 0;
+	top: 0;
+}
+.opacityPlayMus audio{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.name{
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	top: 180px;
+}
+.timerBlock{
+	font-size: 52px;
+	color: #fff;
+	position: absolute;
+	left: 80px;
+	top: 10px;
+	text-align: center;
+}
+
+

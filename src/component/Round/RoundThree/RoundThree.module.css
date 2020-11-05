@@ -1,0 +1,145 @@
+.round3 {
+	position: relative;
+	height: calc(100vh - 250px);
+	width: 100%;
+}
+.containerWordBlock{
+	position: relative;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 700px;
+
+}
+.blockWord{
+	border: 1px solid #000;
+	margin-left: 20px;
+	margin-top: 20px;
+	min-width: 200px;
+	min-height: 60px;
+	width: 200px;
+	height: 60px;
+	font-size: 36px;
+	text-align: center;
+	background: #fff;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: all .2s linear;
+}
+.blockWord:nth-child(4){
+	margin-left: 150px;
+}
+.blockWord:hover{
+	cursor: pointer;
+	color: #fff;
+	background: rgb(14,120,231);
+	background: linear-gradient(180deg, rgba(14,120,231,1) 0%, rgba(22,87,155,1) 50%, rgba(14,120,231,1) 100%);
+}
+
+
+.messBtn{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 30px
+}
+.messBtn button{
+	margin-left: 10px;
+	width: 150px;
+	height: 40px;
+}
+.messBtn button:hover{
+	cursor: pointer;
+}
+.answer{
+	font-size: 56px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	white-space: nowrap;
+	top: 70px;
+}
+.mus{
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.mus img{
+	width: 600px;
+	height: 300px;
+}
+.prompt{
+	font-size: 34px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	white-space: nowrap;
+	bottom: 170px;
+	font-style: italic;
+}
+.prev{
+	position: relative;
+	float: left;
+	opacity: .4;
+}
+.prev:hover{
+	opacity: .7;
+}
+.prev button{
+	height: calc(100vh - 250px);
+	width: 50px;
+	border: none;
+	transition: all .2s linear;
+}
+.next{
+	position: relative;
+	float: right;
+	opacity: .4;
+}
+.next:hover{
+	opacity: .7;
+}
+.next button{
+	height: calc(100vh - 250px);
+	width: 50px;
+	border: none;
+	transition: all .2s linear;
+}
+.next button i, .prev button i{
+	color: #d5d5d5;
+	transition: all .2s linear;
+	font-size: 32px;
+}
+.next button:hover i, .prev button:hover i{
+	color: #4d4d4d;
+}
+.prev button:hover, .next button:hover{
+	cursor: pointer;
+	background: #e9e9e9;
+}
+.prev button:focus, .next button:focus{
+	display: none;
+}
+.words{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.infoCountRound{
+	position: absolute;
+	bottom: 20px;
+	left: 70px;
+	font-size: 42px;
+}
+.timerBlock{
+	font-size: 52px;
+	color: #fff;
+	position: absolute;
+	left: 80px;
+	top: 10px;
+	text-align: center;
+}
