@@ -1,7 +1,6 @@
 import React from "react";
 import s from './MainMenu.module.css'
-import autograph from './../../library/autograph.png'
-import {changeUpdateTimer} from "../../Task/Score";
+import autograph from './../../library/mainWirexia.png'
 
 const MainMenu = (props) => {
 
@@ -11,13 +10,13 @@ const MainMenu = (props) => {
 
 	let onCountPointsRed = () => {
 		let text = changeNameRed.current.value;
-		if(text.length <= 15){
+		if(text.length <= 10){
 			props.updateTeamNameRedAC(text)
 		}
 	};
 	let onCountPointsBlue = () => {
 		let text = changeNameBlue.current.value;
-		if(text.length <= 15) {
+		if(text.length <= 10) {
 			props.updateTeamNameBlueAC(text)
 		}
 	};
@@ -28,7 +27,7 @@ const MainMenu = (props) => {
 
 	return(
 		 <div className={s.mainMenu}>
-
+			 <div className={s.backImg}/>
 			 <div className={s.teams}>
 					<textarea placeholder={'Изменить название красной команды'}
 								 ref={changeNameRed}

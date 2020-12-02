@@ -1,8 +1,6 @@
 import React from "react";
 import s from './RoundTwo.module.css'
 import './../../../css/all.min.css'
-import bit from './../../../library/musGif.gif'
-import bitLoad from './../../../library/imgMus.png'
 import $ from 'jquery'
 
 const RoundTwo = (props) => {
@@ -22,14 +20,10 @@ const RoundTwo = (props) => {
 		 </div>
 
 	$(document).ready(function(){
-		if(nowCountRound % 2 == 0){
-			$('#styleBackground').css('background', '#6869ff');
-			$('#prevBtn').css('background', '#6869ff')
-			$('#nextBtn').css('background', '#6869ff')
+		if(nowCountRound % 2 === 0){
+			props.roundTeamSet('Blue');
 		}else{
-			$('#styleBackground').css('background', '#ff544d');
-			$('#prevBtn').css('background', '#ff544d')
-			$('#nextBtn').css('background', '#ff544d')
+			props.roundTeamSet('Red');
 		}
 	});
 
@@ -110,13 +104,7 @@ const RoundTwo = (props) => {
 				 </div>
 			 </div>
 
-			 <div id='styleBackground' className={s.styleBackground}>
-				 {
-					 nowCountRound % 2 == 0
-					  ? props.nameTeamBlue
-						  : props.nameTeamRed
-				 }
-			 </div>
+
 
 
 			 <div className={s.name}>
@@ -130,18 +118,7 @@ const RoundTwo = (props) => {
 
 			 {whatMusic}
 
-
-
-				 {
-				 	props.isPlayWhatMusic
-					  ? <div className={s.bitImg}>
-							 <img src={bit}/>
-						 </div>
-						 : <div className={s.bitImg}>
-							 <img src={bitLoad}/>
-						 </div>
-				 }
-
+			<h1>В разработке!</h1>
 
 
 

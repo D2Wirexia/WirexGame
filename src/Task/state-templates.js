@@ -1,4 +1,21 @@
 /*
+Как добавить новую категорию?
+- Оформите его в виде:
+{
+	img: [
+		'<ссылка>',
+		'<ссылка>',
+		'<ссылка>'
+	],
+	answer: 'ответ'
+}
+
+Как добавить символ верхней кавычки (апостроф) в блок?
+ - К примеру "О'Коннор", нужно это сделать в виде: 'О\'Коннор'
+ тоесть перед апострофом поставить символ '\'
+*/
+
+/*
 !!! Добавлять не более 12 песен !!!
 
 Как добавить новую категорию?
@@ -177,7 +194,7 @@ export const WhatCommon = [
 	{
 		img: [
 			'https://www.expertboxing.ru/wp-content/uploads/2010/05/kak-uklonyatsya-ot-udarov-v-bokse.jpg',
-			'https://agrariya.com/images/cover/group/13/db46ac83310a9179d053bf8c12115d9d.jpg',
+			'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3662-3663-4335-a661-663061393839__rabbit-2174679_1280.jpg',
 			'https://images.ua.prom.st/930521297_panel-ogon-v.jpg'
 		],
 		answer: 'Разводить'
@@ -227,7 +244,7 @@ export const GuessMusic = [
 	},
 	{
 		name: 'Taylor Swift - Blank Space',
-		musicSRC: 'https://sefon.pro/api/mp3_download/direct/58597/3vUCAPncSuMVNokDiPod8ecaofUGwsi_FDdvAqy1HLeIpNZu8Q05jCZ9jvdb0roQVoMddyblAhyVEMFytCYw2VH2iwtCOzNYlHW3-7a74bpkG4iuK6CtkgGrMuAnSJgOHBoVtCZbVcpIf3XUqR_lf8dhwyRN5yb0dB7Plg/'
+		musicSRC: 'https://sefon.pro/api/mp3_download/direct/58597/3vUCAB6SH20xSPzf258bldMRjWbxWlDiZOGZHdsE3muJdiNXIA8mDGFpInqOnZjMevt_mOjjuUd4zqiHitrwB2dIWhZOTl3HP9hzTyUtyFvgfKfgfn9wvQ1phNzLuiwEenaFn9s_36Y8zZJxAHIzZKrpM1qOaEc49Mps4Q/'
 	},
 	{
 		name: 'Little Big - UNO',
@@ -239,11 +256,11 @@ export const GuessMusic = [
 	},
 	{
 		name: 'Zedd - Stay',
-		musicSRC: 'https://sefon.pro/api/mp3_download/direct/15390/3vUCACj7w7aRsq2IMawp1hf5UpPXGaQPd7FqDVHwEr-TQJNoYLyO2ZlJwz1G79_79x7Fl452_aPeO4B4xBiAQitVRV_I1mQWhcZFVtfg5KBj4tsEM1UQTsN0RxbbG08NN2WTBjHINli-llVvknqwzCdMCIO524mknhaC0w/'
+		musicSRC: 'https://sefon.pro/api/mp3_download/direct/73520/3vUCANJ4P3Yu1AcSynoG0AtZ5nGXbTg7OH9Veg-24N_EmD8UZQdi-60LZ_54h_JpJaTlb-w-2XcvlxCNeL9-z9zeUXPdEl9vnI_ZrLLBeNnI7r-q7F8aOkqupRdcB6FOcgzMR1Vi0V_vNcu644r7-uLBz51tX8yHho728g/'
 	},
 	{
 		name: 'Taylor Swift - Style',
-		musicSRC: 'https://sefon.pro/api/mp3_download/direct/58509/3vUCALUKOO1LdlbdaMSqoxULV6okA3k04mHMq9fpG2hV_VAIWTTPp9H__ORyk8khH-6asi8U4IOuaNuq86kDg-MjH4MLVnA9-F_msn0WOYf52TYVIFoDiU0Df8Oco2QwGigF4CcdoG0aiOCWVQdNaesud7b9OpARzE3Ndw/'
+		musicSRC: 'https://sefon.pro/api/mp3_download/direct/58509/3vUCADmKI4hOcE0Fw9ambpJG4lysGvx3ZkgyUgjrdWrnpDf9qOq-7R7dLHHmXorvoI5QQUqtFgEeFewlVhAK4ALaWIzKmYTuPAaxFhhX6BLd0oouqBdDNtC41UTXjmW4_OczrZ7xqAYijY09EGZFdkxGb8oXNQMA4Z6AXA/'
 	},
 	{
 		name: 'Justin Timberlake - Can\'t Stop The Feeling',
@@ -424,7 +441,7 @@ export const PutInPlaces = [
 	{
 		img: [
 			'https://static10.tgstat.ru/channels/_0/56/56f0932ad9bcb20890c067c294638cf8.jpg',
-			'https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/91372225_267158610966461_602633055288564864_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=105&_nc_ohc=bABTp89Ihy0AX9iN0Y1&oh=1721086c1e8ebc420e40c5dae8e85376&oe=5FA64181',
+			'https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/91372225_267158610966461_602633055288564864_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=105&_nc_ohc=PO0NszR93yAAX_Aj2ga&oh=af6886c6c6402d9954ad6da597e1e565&oe=5FC9DA01',
 			'https://svirtus.cdnvideo.ru/SO9sxAqnAkR1tN1Kg6jXFhWvYMM=/0x0:371x371/800x0/filters:quality(100)/https://hb.bizmrg.com/cybersportru-media/d4/d4e61b79893464edf8fac84d5b25bcd6.jpg?m=6abf7ca4aedde894c0fb76aea5a89542',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNX82bEVzlpEh3V0XTAV9BBiLCQwlUgPSjsQ&usqp=CAU',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5SX-mAZePnayNx9Qf-F5mwb3nGHLQ8uH9oQ&usqp=CAU',

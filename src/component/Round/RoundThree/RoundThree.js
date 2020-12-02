@@ -2,6 +2,7 @@ import React from 'react'
 import s from './RoundThree.module.css'
 import './../../../css/all.min.css'
 import $ from 'jquery'
+import promptImg from './../../../library/backgroundText.png'
 
 const RoundThree = (props) => {
 
@@ -50,8 +51,8 @@ const RoundThree = (props) => {
 	};
 
 	let count = 0;
-
-	let startTimer = (timeSet = 30) => {
+	let startTimer = (timeSet) => {
+		clearInterval(props.timer);
 		let timer = setInterval(() => {
 			count++;
 			let timeLeft = timeSet - count;
@@ -60,22 +61,19 @@ const RoundThree = (props) => {
 			}else{
 				$('#time').css('color', '#fff')
 			}
-			props.timeToThinkAC(timeLeft);
+			props.timeToThinkRoundThreeAC(timeLeft);
 			if(timeLeft === 0){
 				clearInterval(timer);
 			}
 		}, 1000);
+		props.timerSet(timer);
 	};
 
 	$(document).ready(function(){
-		if(nowCountRound % 2 == 0){
-			$('#styleBackground').css('background', '#ff544d');
-			$('#prevBtn').css('background', '#ff544d')
-			$('#nextBtn').css('background', '#ff544d')
+		if(nowCountRound % 2 === 0){
+			props.roundTeamSet('Red');
 		}else{
-			$('#styleBackground').css('background', '#6869ff');
-			$('#prevBtn').css('background', '#6869ff')
-			$('#nextBtn').css('background', '#6869ff')
+			props.roundTeamSet('Blue');
 		}
 		let countOpenAnswer = 0;
 		if(props.visionWordOne){
@@ -93,9 +91,9 @@ const RoundThree = (props) => {
 		if(props.visionWordFive){
 			countOpenAnswer += 1;
 		}
-	/*	if(countOpenAnswer === 4){
-			startTimer()
-		}*/
+		if(countOpenAnswer === 3){
+			startTimer(30)
+		}
 	});
 
 
@@ -142,6 +140,8 @@ const RoundThree = (props) => {
 							 }
 							 props.activeBtnCountPoints(false);
 						 }
+						 clearInterval(props.timer);
+						 props.timeToThinkRoundThreeAC(30);
 					 }
 				 }}>Посчитать балы</button>
 				 <button onClick={() => {
@@ -173,7 +173,15 @@ const RoundThree = (props) => {
 			 </div>
 
 			 <div className={s.prompt}>
-				 {props.showPrompt ? props.musicWord[massCountData].prompt : null }
+				 {
+				 	props.showPrompt
+						 ? <div className={s.promptBlock}>
+							 	<img src={promptImg}/>
+							 	<div className={s.shadowImg}><img src={promptImg}/></div>
+							 	<span className={s.wrwqrw}>{props.musicWord[massCountData].prompt}</span>
+				 			</div>
+						 : null
+				 }
 			 </div>
 
 			 <div className={s.prev} id='prevBtn'>
@@ -189,6 +197,10 @@ const RoundThree = (props) => {
 					 props.activeBtnCountPoints(true);
 					 props.showNameAC(false);
 					 props.showPromptAC(false);
+					 clearInterval(props.timer);
+					 props.timeToThinkRoundThreeAC(30);
+					 $('#time').css('color', '#fff')
+
 				 }}>
 					 <i className="fas fa-chevron-circle-left"></i>
 				 </button>
@@ -207,6 +219,9 @@ const RoundThree = (props) => {
 					 props.activeBtnCountPoints(true);
 					 props.showNameAC(false);
 					 props.showPromptAC(false);
+					 clearInterval(props.timer);
+					 props.timeToThinkRoundThreeAC(30);
+					 $('#time').css('color', '#fff')
 				 }}>
 					 <i className="fas fa-chevron-circle-right"></i>
 				 </button>
@@ -214,10 +229,14 @@ const RoundThree = (props) => {
 
 
 			 <div className={s.timerBlock}>
+				 <div className={s.blockTime}>
+					 <div/>
+					 <div/>
+				 </div>
 				 <div id="time">
 					 {
-						 props.timeToThink > 0
-							  ? props.timeToThink < 10 ? '0' + props.timeToThink : props.timeToThink
+						 props.timeLeftRoundThree > 0
+							  ? props.timeLeftRoundThree < 10 ? '0' + props.timeLeftRoundThree : props.timeLeftRoundThree
 							  : '00'
 					 }
 				 </div>

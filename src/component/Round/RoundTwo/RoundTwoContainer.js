@@ -7,7 +7,8 @@ import {
 	addPointRed,
 	addPointBlue,
 	showAnswerWhatMusic,
-	playWhatMusic
+	playWhatMusic,
+	roundTeamSet
 } from "./../../../Task/Score";
 import {timeToThinkAC} from "./../../../Task/Score";
 
@@ -31,6 +32,7 @@ let mapStateToProps = (state) => {
 
 
 export default connect(mapStateToProps, {
-	nextRound, prevRound, addPointRed, addPointBlue, showAnswerWhatMusic, playWhatMusic, timeToThinkAC
+	nextRound, prevRound, addPointRed, addPointBlue, showAnswerWhatMusic, playWhatMusic, timeToThinkAC,
+	roundTeamSet
 })(RoundTwoContainer);
 

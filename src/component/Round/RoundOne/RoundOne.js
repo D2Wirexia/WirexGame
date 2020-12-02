@@ -20,19 +20,16 @@ const RoundOne = (props) => {
 
 	$(document).ready(function(){
 		if(nowCountRound % 2 == 0){
-			$('#styleBackground').css('background', '#ff544d');
-			$('#prevBtn').css('background', '#ff544d')
-			$('#nextBtn').css('background', '#ff544d')
+			props.roundTeamSet('Red');
 		}else{
-			$('#styleBackground').css('background', '#6869ff');
-			$('#prevBtn').css('background', '#6869ff')
-			$('#nextBtn').css('background', '#6869ff')
+			props.roundTeamSet('Blue');
 		}
 	});
 
 
 	let count = 0;
 	let startTimer = (timeSet) => {
+		clearInterval(props.timer);
 		let timer = setInterval(() => {
 			count++;
 			let timeLeft = timeSet - count;
@@ -46,6 +43,7 @@ const RoundOne = (props) => {
 				clearInterval(timer);
 			}
 		}, 1000);
+	props.timerSet(timer);
 	};
 
 
@@ -83,6 +81,8 @@ const RoundOne = (props) => {
 						 props.prevRound()
 					 }
 					 props.showAnswerWhatCommon(false);
+					 clearInterval(props.timer);
+					 props.timeToThinkAC(props.timeSet);
 				 }}>
 					 <i className="fas fa-chevron-circle-left"></i>
 				 </button>
@@ -96,14 +96,20 @@ const RoundOne = (props) => {
 						 props.nextRound()
 					 }
 					 props.showAnswerWhatCommon(false);
+					 clearInterval(props.timer);
+					 props.timeToThinkAC(props.timeSet);
 				 }}>
 					 <i className="fas fa-chevron-circle-right"></i>
 				 </button>
 			 </div>
 
 			 <div className={s.timerBlock}>
-				 <div onClick={()=>startTimer(props.timeSet)}>
+				 <div onClick={()=>startTimer(props.timeSet)} className={s.startTimer}>
 					 <i className="far fa-play-circle"></i>
+				 </div>
+				 <div className={s.blockTime}>
+					 <div/>
+					 <div/>
 				 </div>
 				 <div id="time">
 					 {

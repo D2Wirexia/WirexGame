@@ -8,6 +8,8 @@ import {
 	addPointBlue,
 	showAnswerWhatCommon,
 	timeToThinkAC,
+	timerSet,
+	roundTeamSet,
 } from "./../../../Task/Score";
 
 class RoundOneContainer extends React.Component {
@@ -22,12 +24,13 @@ let mapStateToProps = (state) => {
 		roundNum: state.scoreNum.roundNum,
 		isShowAnswerWhatCommon: state.scoreNum.isShowAnswerWhatCommon,
 		timeToThink: state.scoreNum.timeToThink,
-		timeSet: state.scoreNum.timeSet
+		timeSet: state.scoreNum.timeSet,
+		timer: state.scoreNum.timer,
 	}
 };
 
 
 export default connect(mapStateToProps, {
-	nextRound, prevRound, addPointRed, addPointBlue, showAnswerWhatCommon, timeToThinkAC,
+	nextRound, prevRound, addPointRed, addPointBlue, showAnswerWhatCommon, timeToThinkAC, timerSet, roundTeamSet
 })(RoundOneContainer);
 

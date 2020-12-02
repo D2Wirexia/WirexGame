@@ -8,7 +8,8 @@ import {
 	nextRound,
 	prevRound,
 	showAnswerPutInPlace,
-	setRandomPutInPlace
+	setRandomPutInPlace,
+	roundTeamSet
 } from "../../../Task/Score";
 
 class RoundFourContainer extends React.Component{
@@ -32,5 +33,6 @@ let mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {
-	addPointRed, addPointBlue, nextRound, prevRound, activeBtnCountPoints, showAnswerPutInPlace, setRandomPutInPlace
+	addPointRed, addPointBlue, nextRound, prevRound, activeBtnCountPoints, showAnswerPutInPlace,
+	setRandomPutInPlace, roundTeamSet
 })(RoundFourContainer);

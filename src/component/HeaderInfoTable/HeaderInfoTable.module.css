@@ -14,16 +14,19 @@
 }
 
 .header{
-	background: #FF8C00;
-	height: 250px;
+	background: rgb(164,22,0);
+	background: linear-gradient(180deg, rgba(164,22,0,1) 0%, rgba(231,52,23,1) 29%, rgba(237,90,67,1) 51%, rgba(237,75,50,1) 70%, rgba(207,34,7,1) 100%);
+	height: 100px;
 	width: 100%;
 	position: relative;
 }
 .centerBlock{
 	left: 50%;
-	transform: translate(-50%);
+	top: 50%;
+	transform: translate(-50%, -50%);
 	position: absolute;
 }
+/*
 .logo{
 	width: 200px;
 	height: 200px;
@@ -31,17 +34,13 @@
 	left: 50%;
 	transform: translate(-50%);
 	top: 0;
-
 }
 .logo img{
 	width: 100%;
 	height: 100%;
 }
+*/
 
-.arrBntRound{
-	bottom: 15px;
-	position: relative;
-}
 
 .button {
 	position: relative;
@@ -176,23 +175,57 @@
  .red{
 	float: left;
 	position: relative;
-	top: 20px;
 	 left: 20px;
-	 color: #da2828;
+	 color: #fff;
+	 display: flex;
+	 width: 300px;
+	 flex-wrap: wrap;
+	 align-items: center;
+	 justify-content: center;
 }
 .blue{
 	float: right;
 	position: relative;
-	top: 20px;
+
 	right: 20px;
-	color: #3136ff;
+	color: #fff;
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+}
+.upBlock{
+	display: flex;
+	flex-wrap: nowrap;
+	width: 300px;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+
 }
 .name{
-	font-size: 42px;
+	font-size: 36px;
 	text-align: center;
-	font-family: "Book Antiqua";
+	font-family: Arial;
 }
 .score{
-	font-size: 92px;
+	font-size: 42px;
 	text-align: center;
+	width: 50px;
+	margin-left: 5px;
+}
+.refactors{
+	display: flex;
+	width: 250px;
+	flex-wrap: nowrap;
+}
+.led{
+	width: 250px;
+	height: 4px;
+	border-radius: 20px;
+	position: absolute;
+	bottom: -10px;
+	transition: all .3s linear;
 }

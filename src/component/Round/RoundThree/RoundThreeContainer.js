@@ -14,7 +14,9 @@ import {
 	visionWordFiveAC,
 	showPromptAC,
 	showNameAC,
-	timeToThinkAC,
+	timeToThinkRoundThreeAC,
+	timerSet,
+	roundTeamSet,
 } from './../../../Task/Score'
 
 class RoundThreeContainer extends React.Component {
@@ -34,7 +36,8 @@ let mapStateToProps = (state) => {
 		showPrompt: state.scoreNum.showPrompt,
 		showName: state.scoreNum.showName,
 		isActiveBtnCountPoints: state.scoreNum.isActiveBtnCountPoints,
-		timeToThink: state.scoreNum.timeToThink,
+		timeLeftRoundThree: state.scoreNum.timeLeftRoundThree,
+		timer: state.scoreNum.timer,
 	}
 };
 
@@ -42,6 +45,6 @@ let mapStateToProps = (state) => {
 export default connect(mapStateToProps, {
 	addPointRed, addPointBlue, nextRound, prevRound, activeBtnCountPoints,
 	visionWordOneAC, visionWordTwoAC, visionWordThreeAC, visionWordFourAC, visionWordFiveAC,
-	showPromptAC, showNameAC, timeToThinkAC
+	showPromptAC, showNameAC, timeToThinkRoundThreeAC, timerSet, roundTeamSet
 })(RoundThreeContainer);
 

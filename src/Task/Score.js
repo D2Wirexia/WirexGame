@@ -1,4 +1,5 @@
-import {GuessMusic, MusicWord, PutInPlaces, WhatCommon} from "./state-templates";
+import {GuessMusic,MusicWord,  PutInPlaces, WhatCommon} from "./state-templates";
+/*import {MusicWord} from './../library/game2/round_3'*/
 
 const ADD_POINT_RED = 'ADD_POINT_RED';
 const ADD_POINT_BLUE = 'ADD_POINT_BLUE';
@@ -27,8 +28,11 @@ const UPDATE_TEAM_NAME_BLUE = 'UPDATE_TEAM_NAME_BLUE';
 const CHANGE_TEAM_NAME_RED = 'CHANGE_TEAM_NAME_RED';
 const CHANGE_TEAM_NAME_BLUE = 'CHANGE_TEAM_NAME_BLUE';
 const TIME_TO_THINK = 'TIME_TO_THINK';
+const TIME_TO_THINK_ROUND_THREE = 'TIME_TO_THINK_ROUND_THREE';
 const UPDATE_TIMER = 'UPDATE_TIMER';
 const CHANGE_UPDATE_TIMER = 'CHANGE_UPDATE_TIMER';
+const TIMER_SET = 'TIMER_SET';
+const SET_ROUND_TEAM = 'SET_ROUND_TEAM';
 
 
 let initialState = {
@@ -40,6 +44,7 @@ let initialState = {
 	scoreRed: 0,
 	scoreBlue: 0,
 	roundNum: 1,
+	roundTeam: null,
 	updateScoreRed: '',
 	updateScoreBlue: '',
 	nameTeamRed: 'Red',
@@ -60,6 +65,8 @@ let initialState = {
 	isPlayWhatMusic: false,
 	timeSet: 60,
 	timeToThink: 60,
+	timer: null,
+	timeLeftRoundThree: 30,
 	updateTimeToThink: '',
 };
 const scoreReducer = (state = initialState, action) => {
@@ -228,6 +235,12 @@ const scoreReducer = (state = initialState, action) => {
 				timeToThink: action.updateTimer,
 			}
 		}
+		case TIME_TO_THINK_ROUND_THREE: {
+			return {
+				...state,
+				timeLeftRoundThree: action.timeLeftRoundThree,
+			}
+		}
 		case UPDATE_TIMER: {
 			return {
 				...state,
@@ -239,6 +252,18 @@ const scoreReducer = (state = initialState, action) => {
 				...state,
 				timeSet: action.newTime,
 				timeToThink: action.newTime
+			}
+		}
+		case TIMER_SET: {
+			return {
+				...state,
+				timer: action.timer
+			}
+		}
+		case SET_ROUND_TEAM: {
+			return {
+				...state,
+				roundTeam: action.name
 			}
 		}
 		default:
@@ -406,6 +431,12 @@ export const timeToThinkAC = (updateTimer) => {
 		updateTimer
 	}
 };
+export const timeToThinkRoundThreeAC = (timeLeftRoundThree) => {
+	return{
+		type: TIME_TO_THINK_ROUND_THREE,
+		timeLeftRoundThree
+	}
+};
 export const updateTimer = (updateTimer) => {
 	return{
 		type: UPDATE_TIMER,
@@ -418,7 +449,18 @@ export const changeUpdateTimer = (newTime) => {
 		newTime
 	}
 };
-
+export const timerSet = (timer) => {
+	return{
+		type: TIMER_SET,
+		timer
+	}
+};
+export const roundTeamSet = (name) => {
+	return{
+		type: SET_ROUND_TEAM,
+		name
+	}
+}
 
 export default scoreReducer;
 

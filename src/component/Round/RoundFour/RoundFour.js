@@ -174,13 +174,9 @@ const RoundFour = (props) => {
 
 	$(document).ready(function(){
 		if(nowCountRound % 2 == 0){
-			$('#styleBackground').css('background', '#6869ff');
-			$('#prevBtn').css('background', '#6869ff')
-			$('#nextBtn').css('background', '#6869ff')
+			props.roundTeamSet('Blue');
 		}else{
-			$('#styleBackground').css('background', '#ff544d');
-			$('#prevBtn').css('background', '#ff544d')
-			$('#nextBtn').css('background', '#ff544d')
+			props.roundTeamSet('Red');
 		}
 	});
 

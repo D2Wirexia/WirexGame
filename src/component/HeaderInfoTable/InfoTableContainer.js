@@ -24,6 +24,7 @@ let mapStateToProps = (state) => {
 		nameTeamBlue: state.scoreNum.nameTeamBlue,
 		scoreRed: state.scoreNum.scoreRed,
 		scoreBlue: state.scoreNum.scoreBlue,
+		roundTeam: state.scoreNum.roundTeam,
 	}
 };
 
