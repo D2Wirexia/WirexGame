@@ -7,7 +7,7 @@ import {
 	updateScoreBlueAC,
 	updateScoreRedAC,
 	setCountRound
-} from "../../Task/Score";
+} from "../../store/NavigationsReducer";
 
 class InfoTableContainer extends React.Component {
 	render() {
@@ -18,13 +18,14 @@ class InfoTableContainer extends React.Component {
 
 let mapStateToProps = (state) => {
 	return {
-		updateScoreRed: state.scoreNum.updateScoreRed,
-		updateScoreBlue: state.scoreNum.updateScoreBlue,
-		nameTeamRed: state.scoreNum.nameTeamRed,
-		nameTeamBlue: state.scoreNum.nameTeamBlue,
-		scoreRed: state.scoreNum.scoreRed,
-		scoreBlue: state.scoreNum.scoreBlue,
-		roundTeam: state.scoreNum.roundTeam,
+		updateScoreRed: state.navigations.updateScoreRed,
+		updateScoreBlue: state.navigations.updateScoreBlue,
+		nameTeamRed: state.navigations.nameTeamRed,
+		nameTeamBlue: state.navigations.nameTeamBlue,
+		scoreRed: state.navigations.scoreRed,
+		scoreBlue: state.navigations.scoreBlue,
+
+		roundTeam: state.navigations.roundTeam,
 	}
 };
 

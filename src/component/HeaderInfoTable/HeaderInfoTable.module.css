@@ -14,11 +14,12 @@
 }
 
 .header{
-	background: rgb(164,22,0);
-	background: linear-gradient(180deg, rgba(164,22,0,1) 0%, rgba(231,52,23,1) 29%, rgba(237,90,67,1) 51%, rgba(237,75,50,1) 70%, rgba(207,34,7,1) 100%);
+	background: rgb(52,152,249);
+	background: linear-gradient(186deg, rgba(52,152,249,1) 0%, rgba(12,60,107,1) 9%, rgba(52,152,249,1) 26%, rgba(12,60,107,1) 45%, rgba(52,152,249,1) 71%, rgba(12,60,107,1) 87%, rgba(26,102,177,1) 100%);
 	height: 100px;
 	width: 100%;
 	position: relative;
+	box-shadow: inset 0 -3px 5px #092641;
 }
 .centerBlock{
 	left: 50%;

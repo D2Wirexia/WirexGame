@@ -8,7 +8,7 @@ import {
 	changeTeamNameBlue,
 	changeUpdateTimer,
 	updateTimer
-} from "../../Task/Score";
+} from "../../store/NavigationsReducer";
 
 class MainMenuContainer extends React.Component {
 	render() {
@@ -17,9 +17,9 @@ class MainMenuContainer extends React.Component {
 }
 let mapStateToProps = (state) => {
 	return {
-		updateTeamNameRed: state.scoreNum.updateTeamNameRed,
-		updateTeamNameBlue: state.scoreNum.updateTeamNameBlue,
-		updateTimeToThink: state.scoreNum.updateTimeToThink
+		updateTeamNameRed: state.navigations.updateTeamNameRed,
+		updateTeamNameBlue: state.navigations.updateTeamNameBlue,
+		updateTimeToThink: state.navigations.updateTimeToThink
 
 	}
 };

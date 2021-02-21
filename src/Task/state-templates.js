@@ -44,7 +44,7 @@ import mus9 from './../library/mus9.mp3'
 import mus10 from './../library/mus10.mp3'
 import mus11 from './../library/mus11.mp3'
 import mus12 from './../library/mus12.mp3'
-
+import img1 from './../library/img1.png'
 
 export const WhatCommon = [
 	{
@@ -225,55 +225,61 @@ export const WhatCommon = [
 	},
 ];
 
-export const GuessMusic = [
+export const OneOfTheThree = [
 	{
-		name: 'Post Malone - rockstar',
-		musicSRC: 'https://cdn1.muzgoo.net/uploads/files/2018-02/1518625879_03_-post-malone-feat_-21-savage-rockstar.mp3'
+		img: [
+			 'https://cdn.trend.az/2010/10/29/Domingo_291010_2.jpg',
+			 'https://biz.liga.net/images/general/2019/10/16/thumbnail-tw-20191016105102-4363.jpg?v=1571217359',
+			 'https://c.files.bbci.co.uk/517E/production/_109926802_milkcow.jpg'
+		],
+		answer: 1,
+		question: 'Что из этих 3 картинок лишнея (не связана с другими двумя)?'
 	},
 	{
-		name: 'John Legend - All Of Me',
-		musicSRC: 'https://dl.mp3mob.net/uploads/files/2019-08/1565874513_john-legend-all-of-me.mp3'
+		img: [
+			'https://www.vkusnyblog.ru/wp-content/uploads/2015/12/kuritsa-s-kartofelem-i-shampinionami-450x458.jpg',
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZUM5Ux2A0k_PFcVwAIwFYMSQ5Vi4_6DaH9Q&usqp=CAU',
+			img1
+		],
+		answer: 2,
+		question: 'Что из этих 3 картинок лишнея (не связана с другими двумя)?'
 	},
 	{
-		name: 'Ariana Grande - Side To Side',
-		musicSRC: 'https://dl.sonq.ru/music/49525/Nicki-Minaj-feat-Ariana-Grande_-_Side-To-Side_sonq.ru.mp3'
+		img: [
+			'https://i1.sndcdn.com/artworks-000239322660-zo65rc-t500x500.jpg',
+			'https://twilightrussia.ru/_nw/295/26797542.jpg',
+			'https://i1.sndcdn.com/artworks-000079320212-ckndov-t500x500.jpg'
+		],
+		answer: 2,
+		question: 'Это лучшие кавер исполнительницы по моему мнению и только 1 не совсем имеет к ним отношения'
 	},
 	{
-		name: 'Maroon 5 - Animals',
-		musicSRC: 'https://mp3name.net/download.php?id=26135'
+		img: [
+			'https://stuki-druki.com/aforizms/Ed-Sheeran-01.jpg',
+			'https://s10.stc.all.kpcdn.net/share/i/12/10263079.jpg.wr-1200.sh-18.jpg',
+			'https://www.film.ru/sites/default/files/styles/epsa_260x320/public/people/1456110-1132150.jpg'
+		],
+		answer: 1,
+		question: 'Только у этого человека есть Дети'
 	},
 	{
-		name: 'Taylor Swift - Blank Space',
-		musicSRC: 'https://sefon.pro/api/mp3_download/direct/58597/3vUCAB6SH20xSPzf258bldMRjWbxWlDiZOGZHdsE3muJdiNXIA8mDGFpInqOnZjMevt_mOjjuUd4zqiHitrwB2dIWhZOTl3HP9hzTyUtyFvgfKfgfn9wvQ1phNzLuiwEenaFn9s_36Y8zZJxAHIzZKrpM1qOaEc49Mps4Q/'
+		img: [
+			'https://data.fantlab.ru/images/autors/22',
+			 'https://s.fraza.com/images/2019/07/31/090736_hawking-1.jpg',
+			 'https://static.mk.ru/upload/entities/2019/10/18/22/articles/detailPicture/1e/29/a3/a5/a0b656599fde72d6d31da7415a8cbad4.jpg'
+		],
+		answer: 1,
+		question: '"Люди не становятся лучше – только умнее" - эта цитата принадлежит ...'
 	},
 	{
-		name: 'Little Big - UNO',
-		musicSRC: 'https://vipik.net/files/music/2020/04/Klava_Koka_Transleyt_-_UNO_Little_Big_na_russkom.mp3'
+		img: [
+			 'https://file.liga.net/images/general/2012/09/10/201209101614154080.jpg?v=1521737321',
+			 'https://storage1.censor.net/images/e/5/0/6/e5065f338762711f8b7631a88dbaee7c/original.jpg',
+			 'https://static.mk.ru/upload/entities/2019/10/18/22/articles/detailPicture/1e/29/a3/a5/a0b656599fde72d6d31da7415a8cbad4.jpg'
+		],
+		answer: 3,
+		question: '"Настойчивость очень важна. Вы не должны сдаваться, если только не вынуждены сдаться" - эта цитата принадлежит ...'
 	},
-	{
-		name: 'BTS - Fake Love (cover Клава Кока)',
-		musicSRC: 'https://muzup.ru/uploads/music/2018/08/Klava_Koka_Fake_Love_BTS_ft_Dima_Maslennikov.mp3'
-	},
-	{
-		name: 'Zedd - Stay',
-		musicSRC: 'https://sefon.pro/api/mp3_download/direct/73520/3vUCANJ4P3Yu1AcSynoG0AtZ5nGXbTg7OH9Veg-24N_EmD8UZQdi-60LZ_54h_JpJaTlb-w-2XcvlxCNeL9-z9zeUXPdEl9vnI_ZrLLBeNnI7r-q7F8aOkqupRdcB6FOcgzMR1Vi0V_vNcu644r7-uLBz51tX8yHho728g/'
-	},
-	{
-		name: 'Taylor Swift - Style',
-		musicSRC: 'https://sefon.pro/api/mp3_download/direct/58509/3vUCADmKI4hOcE0Fw9ambpJG4lysGvx3ZkgyUgjrdWrnpDf9qOq-7R7dLHHmXorvoI5QQUqtFgEeFewlVhAK4ALaWIzKmYTuPAaxFhhX6BLd0oouqBdDNtC41UTXjmW4_OczrZ7xqAYijY09EGZFdkxGb8oXNQMA4Z6AXA/'
-	},
-	{
-		name: 'Justin Timberlake - Can\'t Stop The Feeling',
-		musicSRC: 'https://музыка.me/download/MWExM2Q1NGQ5ZjM5MzY0MjU2OWY5OGU3ZTQ4NWRiOTF8bG9hZA.mp3'
-	},
-	{
-		name: 'Sabrina Carpenter - Thumbs',
-		musicSRC: 'https://музыка.me/download/MjAyMDk0NGM3OGVhMDBhYmNlNjFlZDMyNzk2ODNkY2N8bG9hZA.mp3'
-	},
-	{
-		name: 'Ed Sheeran & Justin Bieber - I Don\'t Care',
-		musicSRC: 'https://muz-bars.ru/uploads/files/2019-05/1557864075_ed-sheeran-justin-bieber-i-don039t-care-muz-bar_net.mp3'
-	}
 ];
 
 export const MusicWord = [

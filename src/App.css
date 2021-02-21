@@ -7,3 +7,7 @@
 header{
 	position: relative;
 }
+*{
+	cursor: url('library/cursorTest.png'), default;
+
+}

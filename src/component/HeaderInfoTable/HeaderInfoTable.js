@@ -76,6 +76,14 @@ function HeaderInfoTable(props) {
 
 				 <ul className={s.arrBntRound}>
 					<li>
+						<NavLink to={'/'}
+									activeClassName={s.active}
+									className={`${s.button} ${s.pill}`}
+									onClick={()=> {props.setCountRound()}}>
+							<i className="fas fa-home"></i>
+						</NavLink>
+					</li>
+					 <li>
 					 <NavLink to={'/round-1'}
 								 activeClassName={s.active}
 								 className={`${s.button} ${s.pill}`}

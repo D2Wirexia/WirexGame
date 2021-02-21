@@ -1,6 +1,7 @@
 import React from "react";
 import s from './MainMenu.module.css'
 import autograph from './../../library/mainWirexia.png'
+import './../../css/all.min.css'
 
 const MainMenu = (props) => {
 
@@ -22,25 +23,35 @@ const MainMenu = (props) => {
 	};
 	let onCountTime= () => {
 		let text = countTime.current.value;
-		props.updateTimer(text)
+		props.updateTimer(text);
+		if(text >= 100){
+			props.updateTimer(99)
+		}
+		if(text < 0){
+			props.updateTimer(1)
+		}
 	};
-
 	return(
 		 <div className={s.mainMenu}>
 			 <div className={s.backImg}/>
 			 <div className={s.teams}>
-					<textarea placeholder={'Изменить название красной команды'}
-								 ref={changeNameRed}
-								 onChange={onCountPointsRed}
-								 value={props.updateTeamNameRed}/>
-
-				 <textarea placeholder={'Изменить название синей команды'}
-							  ref={changeNameBlue}
-							  onChange={onCountPointsBlue}
-							  value={props.updateTeamNameBlue}/>
+				 <h2>W.GAME</h2>
+				 <span><i className="fas fa-users"></i>Изменить название красной команды</span>
+				 <input type={'text'}
+						  placeholder={'До 10 символов'}
+						  ref={changeNameRed}
+						  onChange={onCountPointsRed}
+						  value={props.updateTeamNameRed}/>
+				 <span><i className="fas fa-users"></i>Изменить название синей команды</span>
+				 <input  type={'text'}
+							placeholder={'До 10 символов'}
+							ref={changeNameBlue}
+							onChange={onCountPointsBlue}
+							value={props.updateTeamNameBlue}/>
+				 <span><i className="fas fa-clock"></i>Время на размышления в 1-вом раунде</span>
 				 <input type={'number'}
 						  ref={countTime}
-						  placeholder={'Время на размышления'}
+						  placeholder={'макс. 99'}
 						  onChange={onCountTime}
 						  value={props.updateTimeToThink}/>
 				 <button onClick={() => {
