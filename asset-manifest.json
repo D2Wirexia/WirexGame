@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/WirexGame/static/css/main.319b6087.chunk.css",
-    "main.js": "/WirexGame/static/js/main.d4ebbc2d.chunk.js",
-    "main.js.map": "/WirexGame/static/js/main.d4ebbc2d.chunk.js.map",
+    "main.js": "/WirexGame/static/js/main.af63154f.chunk.js",
+    "main.js.map": "/WirexGame/static/js/main.af63154f.chunk.js.map",
     "runtime-main.js": "/WirexGame/static/js/runtime-main.bb3d1338.js",
     "runtime-main.js.map": "/WirexGame/static/js/runtime-main.bb3d1338.js.map",
     "static/js/2.8f36f6bb.chunk.js": "/WirexGame/static/js/2.8f36f6bb.chunk.js",
     "static/js/2.8f36f6bb.chunk.js.map": "/WirexGame/static/js/2.8f36f6bb.chunk.js.map",
     "index.html": "/WirexGame/index.html",
-    "precache-manifest.166c5890fcabc9074d64a967aff4bbe5.js": "/WirexGame/precache-manifest.166c5890fcabc9074d64a967aff4bbe5.js",
+    "precache-manifest.7bd6275ccd41512b77741f10d8da7700.js": "/WirexGame/precache-manifest.7bd6275ccd41512b77741f10d8da7700.js",
     "service-worker.js": "/WirexGame/service-worker.js",
     "static/css/main.319b6087.chunk.css.map": "/WirexGame/static/css/main.319b6087.chunk.css.map",
     "static/js/2.8f36f6bb.chunk.js.LICENSE.txt": "/WirexGame/static/js/2.8f36f6bb.chunk.js.LICENSE.txt",
@@ -55,6 +55,6 @@
     "static/js/runtime-main.bb3d1338.js",
     "static/js/2.8f36f6bb.chunk.js",
     "static/css/main.319b6087.chunk.css",
-    "static/js/main.d4ebbc2d.chunk.js"
+    "static/js/main.af63154f.chunk.js"
   ]
 }

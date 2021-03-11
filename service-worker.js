@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/WirexGame/precache-manifest.166c5890fcabc9074d64a967aff4bbe5.js"
+  "/WirexGame/precache-manifest.7bd6275ccd41512b77741f10d8da7700.js"
 );
 
 self.addEventListener('message', (event) => {
