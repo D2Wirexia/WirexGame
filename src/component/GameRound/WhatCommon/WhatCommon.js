@@ -1,131 +1,82 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import s from './WhatCommon.module.css'
 import './../../../css/all.min.css'
-import $ from "jquery";
+import Timer from "../../Timer/Timer";
 
 const WhatCommon = (props) => {
-
-	let nowCountRound = props.roundNum;
+	let [nowCountRound, setNowCountRound] = useState(props.roundNum);
+	useEffect(() => {
+		setNowCountRound(props.roundNum)
+	}, [props.roundNum]);
+	let [removeTimer, setRemoveTimer] = useState(false);
+	useEffect(() => {setRemoveTimer(false)}, [nowCountRound]);
+	let [isFetch, setIsFetch] = useState(false);
 	let messCountRound = nowCountRound - 1;
 	let allCountRound = props.whatCommon.length;
-
 	let whatComImg =
 		 <div className={s.blockImg}>
-			 <img src={props.whatCommon[messCountRound].img[0]}/>
-			 <img src={props.whatCommon[messCountRound].img[1]}/>
-			 <img src={props.whatCommon[messCountRound].img[2]}/>
-		 </div>
-
-
-	$(document).ready(function(){
-		if(nowCountRound % 2 == 0){
-			props.roundTeamSet('Red');
-		}else{
-			props.roundTeamSet('Blue');
-		}
-	});
-
-
-	let count = 0;
-	let startTimer = (timeSet) => {
-		clearInterval(props.timer);
-		let timer = setInterval(() => {
-			count++;
-			let timeLeft = timeSet - count;
-			if(timeLeft < 10){
-				$('#time').css('color', 'red')
-			}else{
-				$('#time').css('color', '#fff')
-			}
-			props.timeToThinkAC(timeLeft);
-			if(timeLeft === 0){
-				clearInterval(timer);
-			}
-		}, 1000);
-	props.timerSet(timer);
-	};
-
-
-
-	return(
+			 <img src={props.whatCommon[messCountRound].img[0]} alt="figure1"/>
+			 <img src={props.whatCommon[messCountRound].img[1]} alt="figure2"/>
+			 <img src={props.whatCommon[messCountRound].img[2]} alt="figure3"/>
+		 </div>;
+	nowCountRound % 2 === 0 ? props.roundTeamSet('Red') : props.roundTeamSet('Blue');
+	return (
 		 <div className={s.round1} id={'styleBackground'}>
-
 			 <div className={s.messBtn}>
-
 				 <button onClick={() => {
-					 if(nowCountRound % 2 == 0){
+					 if (nowCountRound % 2 === 0) {
 						 props.addPointRed(1);
-					 }else{
+					 } else {
 						 props.addPointBlue(1);
 					 }
-				 }}>Верно!</button>
-
+				 }}>Верно!
+				 </button>
 				 <button onClick={() => {
-					 if(nowCountRound % 2 == 0){
+					 if (nowCountRound % 2 === 0) {
 						 props.addPointRed(-1);
-					 }else{
+					 } else {
 						 props.addPointBlue(-1);
 					 }
-				 }}>Не верно!</button>
-
+				 }}>Не верно!
+				 </button>
 				 <button onClick={() => {
 					 props.showAnswerWhatCommon(true);
-				 }}>Ответ</button>
-
+					 setRemoveTimer(true);
+				 }}>Ответ
+				 </button>
 			 </div>
-
-			 <div className={s.prev} id='prevBtn'>
+			 <div className={s.prev}>
 				 <button onClick={() => {
-					 if(nowCountRound > 1){
+					 if (nowCountRound > 1) {
 						 props.prevRound()
 					 }
 					 props.showAnswerWhatCommon(false);
-					 clearInterval(props.timer);
-					 props.timeToThinkAC(props.timeSet);
-					 $('#time').css('color', '#fff');
-					 startTimer(props.timeSet);
+					 setRemoveTimer(true);
 				 }}>
-					 <i className="fas fa-chevron-circle-left"></i>
+					 <i className="fas fa-chevron-circle-left"/>
 				 </button>
 			 </div>
-
-
-
-			 <div className={s.next} id='nextBtn'>
+			 <div className={s.next}>
 				 <button onClick={() => {
-					 if(nowCountRound < allCountRound){
+					 if (nowCountRound < allCountRound) {
 						 props.nextRound()
 					 }
 					 props.showAnswerWhatCommon(false);
-					 clearInterval(props.timer);
-					 props.timeToThinkAC(props.timeSet);
-					 $('#time').css('color', '#fff');
-					 startTimer(props.timeSet);
+					 setRemoveTimer(true);
 				 }}>
-					 <i className="fas fa-chevron-circle-right"></i>
+					 <i className="fas fa-chevron-circle-right"/>
 				 </button>
 			 </div>
-
 			 <div className={s.timerBlock}>
-				 <div onClick={()=>startTimer(props.timeSet)} className={s.startTimer}>
-					 <i className="far fa-play-circle"></i>
-				 </div>
-				 <div className={s.blockTime}>
-					 <div/>
-					 <div/>
-				 </div>
-				 <div id="time">
-					 {
-						 props.timeToThink > 0
-							  ? props.timeToThink < 10 ? '0' + props.timeToThink : props.timeToThink
-							  : '00'
-					 }
+				 <div className={s.startTimer}>
+					 <i className="far fa-play-circle" onClick={() =>{
+					 	setIsFetch(res => !res);
+					 }}/>
+					 <Timer time={props.timeSet} isFetchButtonStartTimer={isFetch}
+							  removeTimer={removeTimer}/>
 				 </div>
 			 </div>
-
-
 			 {whatComImg}
-
 			 <div className={s.name}>
 				 {
 					 props.isShowAnswerWhatCommon
@@ -133,7 +84,6 @@ const WhatCommon = (props) => {
 						  : '. . . . .'
 				 }
 			 </div>
-
 			 <div className={s.infoCountRound}>{nowCountRound}/{allCountRound}</div>
 		 </div>
 	)

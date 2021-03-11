@@ -2,51 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cb98e31-b6cd-4655-8ee2-e22ee5bbd92a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Task/PutInPlaces.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWordsContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlaceContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOneContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommonContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Timer/Timer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Timer/Timer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/MusicWordsReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/NavigationsReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/PutInPlaceReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/SomethingOneReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/WhatCommonReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task/Score.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task/redux-store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task/state-templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task/state-templates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bush.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bush.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWordsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWordsContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommonContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommonContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/HeaderInfoTable/HeaderInfoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/HeaderInfoTable/HeaderInfoTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/HeaderInfoTable/HeaderInfoTable.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/HeaderInfoTable/HeaderInfoTable.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/HeaderInfoTable/InfoTableContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/HeaderInfoTable/InfoTableContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/MainMenu/MainMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainMenu/MainMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/MainMenu/MainMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainMenu/MainMenu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/MainMenu/MainMenuContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainMenu/MainMenuContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundFour/RoundFour.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundFour/RoundFour.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlace.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundFour/RoundFourContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundOne/RoundOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundOne/RoundOne.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundOne/RoundOneContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundThree/RoundThree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundThree/RoundThree.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundThree/RoundThreeContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundTwo/RoundTwo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundTwo/RoundTwo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Round/RoundTwo/RoundTwoContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/backgroundText.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/backgroundText.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/imgMus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/musGif.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Timer/Timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Timer/Timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/game2/round_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/game2/round_3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +162,10 @@
       <workItem from="1613655115749" duration="8944000" />
       <workItem from="1613759929130" duration="1254000" />
       <workItem from="1613816362459" duration="13081000" />
+      <workItem from="1613900798495" duration="531000" />
+      <workItem from="1614161736296" duration="10387000" />
+      <workItem from="1615288734507" duration="615000" />
+      <workItem from="1615459899913" duration="22624000" />
     </task>
     <servers />
   </component>
@@ -211,10 +185,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="359" y="166" key="#tester4ik.js/0.0.1280.984@0.0.1280.984" timestamp="1610447304243" />
-    <state x="378" y="324" key="FileChooserDialogImpl" timestamp="1613762081121">
+    <state x="378" y="324" key="FileChooserDialogImpl" timestamp="1613901332923">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="378" y="324" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1613762081121" />
+    <state x="378" y="324" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1613901332923" />
     <state width="1259" height="263" key="GridCell.Tab.0.bottom" timestamp="1613664140093">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -304,11 +278,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/dataSlide.js</url>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlace.js</url>
-          <line>62</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlace.js</url>

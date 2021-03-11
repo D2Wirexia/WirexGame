@@ -1,7 +1,6 @@
 import React from "react";
 import s from './HeaderInfoTable.module.css'
 import {NavLink} from 'react-router-dom'
-import logo from './../../library/mainWirexia.png'
 import $ from 'jquery'
 
 function HeaderInfoTable(props) {
@@ -80,7 +79,7 @@ function HeaderInfoTable(props) {
 									activeClassName={s.active}
 									className={`${s.button} ${s.pill}`}
 									onClick={()=> {props.setCountRound()}}>
-							<i className="fas fa-home"></i>
+							<i className="fas fa-home"/>
 						</NavLink>
 					</li>
 					 <li>

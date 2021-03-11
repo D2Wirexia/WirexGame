@@ -101,7 +101,7 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[0]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[0]} id={'selectVariants1'}/>
+				 <img src={props.putInPlaces[messCountRound].img[0]} alt="picture1" id={'selectVariants1'}/>
 				 <div className={s.selectVar}>{selectVariants1}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -112,7 +112,7 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[1]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[1]} id={'selectVariants2'}/>
+				 <img src={props.putInPlaces[messCountRound].img[1]} alt="picture2" id={'selectVariants2'}/>
 				 <div className={s.selectVar}>{selectVariants2}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -123,7 +123,7 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[2]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[2]} id={'selectVariants3'}/>
+				 <img src={props.putInPlaces[messCountRound].img[2]} alt="picture3" id={'selectVariants3'}/>
 				 <div className={s.selectVar}>{selectVariants3}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -134,7 +134,7 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[3]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[3]} id={'selectVariants4'}/>
+				 <img src={props.putInPlaces[messCountRound].img[3]} alt="picture4" id={'selectVariants4'}/>
 				 <div className={s.selectVar}>{selectVariants4}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -145,7 +145,7 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[4]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[4]} id={'selectVariants5'}/>
+				 <img src={props.putInPlaces[messCountRound].img[4]} alt="picture5" id={'selectVariants5'}/>
 				 <div className={s.selectVar}>{selectVariants5}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -156,24 +156,16 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[5]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[5]} id={'selectVariants6'}/>
+				 <img src={props.putInPlaces[messCountRound].img[5]} alt="picture6" id={'selectVariants6'}/>
 				 <div className={s.selectVar}>{selectVariants6}</div>
 			 </div>
 		 </div>
 
 
-	let numberRound = () => {
-		for(let i = 0; i <= allCountRound; i++){
-			switch (nowCountRound) {
-				case i: {
-					return variants
-				}
-			}
-		}
-	};
+
 
 	$(document).ready(function(){
-		if(nowCountRound % 2 == 0){
+		if(nowCountRound % 2 === 0){
 			props.roundTeamSet('Blue');
 		}else{
 			props.roundTeamSet('Red');
@@ -351,7 +343,7 @@ const PutInPlace = (props) => {
 						 $('#selectVariants6').css('border', '5px solid red');
 					 }
 					 if(props.isActiveBtnCountPoints){
-						 if(nowCountRound % 2 == 0){
+						 if(nowCountRound % 2 === 0){
 							 props.addPointBlue(nowPoint)
 						 }else{
 							 props.addPointRed(nowPoint)
@@ -421,7 +413,7 @@ const PutInPlace = (props) => {
 			 <div className={s.containerVariantsWord}>
 				 {
 					 !props.isShowAnswerPutInPlace
-						  ? numberRound()
+						  ? variants
 						  : null
 				 }
 			 </div>

@@ -38,8 +38,6 @@ let mapStateToProps = (state) => {
 		showPrompt: state.musicWords.showPrompt,
 		showName: state.musicWords.showName,
 		isActiveBtnCountPoints: state.navigations.isActiveBtnCountPoints,
-		timeLeftRoundThree: state.navigations.timeLeftRoundThree,
-		timer: state.navigations.timer,
 	}
 };
 

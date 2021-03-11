@@ -22,9 +22,7 @@ let mapStateToProps = (state) => {
 		whatCommon: state.whatCommon.whatCommon,
 		roundNum: state.navigations.roundNum,
 		isShowAnswerWhatCommon: state.whatCommon.isShowAnswerWhatCommon,
-		timeToThink: state.navigations.timeToThink,
 		timeSet: state.navigations.timeSet,
-		timer: state.navigations.timer,
 	}
 };
 

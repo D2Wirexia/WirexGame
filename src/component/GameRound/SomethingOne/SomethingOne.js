@@ -1,30 +1,35 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import s from './SomethingOne.module.css'
 import './../../../css/all.min.css'
 import $ from 'jquery'
 import promptImg from "../../../library/backgroundText.png";
-import cursorTest from "../../../library/cursorTest.png";
+import Timer from "../../Timer/Timer";
 
 const SomethingOne = (props) => {
 
-	let nowCountRound = props.roundNum;
+	let [nowCountRound, setNowCountRound] = useState(props.roundNum);
+	useEffect(() => {
+		setNowCountRound(props.roundNum)
+	}, [props.roundNum]);
+	let [removeTimer, setRemoveTimer] = useState(false);
+	useEffect(() => {setRemoveTimer(false)}, [nowCountRound]);
+	let [isFetch, setIsFetch] = useState(false);
 	let messCountRound = nowCountRound - 1;
 	let allCountRound = props.oneOfTheThree.length;
 
 
-
 	let imgMess =
 		 <div className={s.imgBlockMess}>
-			 <img src={props.oneOfTheThree[messCountRound].img[0]} id="one" onClick={() => {
-			 	$('#one').css('border', '6px solid yellow');
-			 	$('#two').css('border', 'none');
+			 <img src={props.oneOfTheThree[messCountRound].img[0]} alt="picture1" id="one" onClick={() => {
+				 $('#one').css('border', '6px solid yellow');
+				 $('#two').css('border', 'none');
 				 $('#three').css('border', 'none');
 				 props.varOneAC(true);
 				 props.varTwoAC(false);
 				 props.varThreeAC(false);
 
 			 }}/>
-			 <img src={props.oneOfTheThree[messCountRound].img[1]} id="two" onClick={() => {
+			 <img src={props.oneOfTheThree[messCountRound].img[1]} alt="picture2" id="two" onClick={() => {
 				 $('#one').css('border', 'none');
 				 $('#two').css('border', '6px solid yellow');
 				 $('#three').css('border', 'none');
@@ -32,7 +37,7 @@ const SomethingOne = (props) => {
 				 props.varTwoAC(true);
 				 props.varThreeAC(false);
 			 }}/>
-			 <img src={props.oneOfTheThree[messCountRound].img[2]} id="three" onClick={() => {
+			 <img src={props.oneOfTheThree[messCountRound].img[2]} alt="picture3" id="three" onClick={() => {
 				 $('#one').css('border', 'none');
 				 $('#two').css('border', 'none');
 				 $('#three').css('border', '6px solid yellow');
@@ -40,7 +45,7 @@ const SomethingOne = (props) => {
 				 props.varTwoAC(false);
 				 props.varThreeAC(true);
 			 }}/>
-			 </div>
+			 </div>;
 
 
 	$(document).ready(function(){
@@ -82,24 +87,6 @@ const SomethingOne = (props) => {
 		});
 	});
 
-	let count = 0;
-	let startTimer = (timeSet) => {
-		clearInterval(props.timer);
-		let timer = setInterval(() => {
-			count++;
-			let timeLeft = timeSet - count;
-			if(timeLeft < 10){
-				$('#time').css('color', 'red')
-			}else{
-				$('#time').css('color', '#fff')
-			}
-			props.timeToThinkAC(timeLeft);
-			if(timeLeft === 0){
-				clearInterval(timer);
-			}
-		}, 1000);
-		props.timerSet(timer);
-	};
 
 	return(
 		 <div className={s.round2}>
@@ -123,7 +110,7 @@ const SomethingOne = (props) => {
 						}
 						if (props.varOne && props.oneOfTheThree[messCountRound].answer !== 1) {
 							$('#one').css('border', '6px solid #FF2D25');
-							if (nowCountRound % 2 == 0) {
+							if (nowCountRound % 2 === 0) {
 								props.addPointBlue(-1);
 							} else {
 								props.addPointRed(-1);
@@ -131,7 +118,7 @@ const SomethingOne = (props) => {
 						}
 						if (props.varTwo && props.oneOfTheThree[messCountRound].answer !== 2) {
 							$('#two').css('border', '6px solid #FF2D25');
-							if (nowCountRound % 2 == 0) {
+							if (nowCountRound % 2 === 0) {
 								props.addPointBlue(-1);
 							} else {
 								props.addPointRed(-1);
@@ -139,36 +126,38 @@ const SomethingOne = (props) => {
 						}
 						if (props.varThree && props.oneOfTheThree[messCountRound].answer !== 3) {
 							$('#three').css('border', '6px solid #FF2D25');
-							if (nowCountRound % 2 == 0) {
+							if (nowCountRound % 2 === 0) {
 								props.addPointBlue(-1);
 							} else {
 								props.addPointRed(-1);
 							}
 						}
 						if (props.varOne && props.oneOfTheThree[messCountRound].answer === 1) {
-							if (nowCountRound % 2 == 0) {
+							if (nowCountRound % 2 === 0) {
 								props.addPointBlue(1);
 							} else {
 								props.addPointRed(1);
 							}
 						}
 						if (props.varTwo && props.oneOfTheThree[messCountRound].answer === 2) {
-							if (nowCountRound % 2 == 0) {
+							if (nowCountRound % 2 === 0) {
 								props.addPointBlue(1);
 							} else {
 								props.addPointRed(1);
 							}
 						}
 						if (props.varThree && props.oneOfTheThree[messCountRound].answer === 3) {
-							if (nowCountRound % 2 == 0) {
+							if (nowCountRound % 2 === 0) {
 								props.addPointBlue(1);
 							} else {
 								props.addPointRed(1);
 							}
 						}
+						setRemoveTimer(true);
 					}else{
 				  		alert("Выберите один из вариантов ответа");
 					}
+
 				 }}>Ответ</button>
 			 </div>
 
@@ -186,12 +175,12 @@ const SomethingOne = (props) => {
 					 clearInterval(props.timer);
 					 props.timeToThinkAC(props.timeSet);
 					 $('#time').css('color', '#fff');
-					 startTimer(props.timeSet);
 					 props.varOneAC(false);
 					 props.varTwoAC(false);
 					 props.varThreeAC(false);
+					 setRemoveTimer(true);
 				 }}>
-					 <i className="fas fa-chevron-circle-left"></i>
+					 <i className="fas fa-chevron-circle-left"/>
 				 </button>
 			 </div>
 
@@ -209,35 +198,28 @@ const SomethingOne = (props) => {
 					 clearInterval(props.timer);
 					 props.timeToThinkAC(props.timeSet);
 					 $('#time').css('color', '#fff');
-					 startTimer(props.timeSet);
 					 props.varOneAC(false);
 					 props.varTwoAC(false);
 					 props.varThreeAC(false);
+					 setRemoveTimer(true);
 				 }}>
-					 <i className="fas fa-chevron-circle-right"></i>
+					 <i className="fas fa-chevron-circle-right"/>
 				 </button>
 			 </div>
 
 			 <div className={s.timerBlock}>
-				 <div onClick={()=>startTimer(props.timeSet)} className={s.startTimer}>
-					 <i className="far fa-play-circle"></i>
-				 </div>
-				 <div className={s.blockTime}>
-					 <div/>
-					 <div/>
-				 </div>
-				 <div id="time">
-					 {
-						 props.timeToThink > 0
-							  ? props.timeToThink < 10 ? '0' + props.timeToThink : props.timeToThink
-							  : '00'
-					 }
+				 <div className={s.startTimer}>
+					 <i className="far fa-play-circle" onClick={() =>{
+						 setIsFetch(res => !res);
+					 }}/>
+					 <Timer time={props.timeSet} isFetchButtonStartTimer={isFetch}
+							  removeTimer={removeTimer}/>
 				 </div>
 			 </div>
 
 			 <div className={s.prompt}>
 				 <div className={s.promptBlock}>
-							  <img src={promptImg}/>
+							  <img src={promptImg} alt="promptImg"/>
 							  <span className={s.wrwqrw}>{props.oneOfTheThree[messCountRound].question}</span>
 						  </div>
 

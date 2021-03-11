@@ -205,7 +205,7 @@ export const MusicWord = [
 	},
 	{
 		name: 'RSAC - NBA (Не мешай)',
-		word: ['эти', 'крылья', 'не мои', 'не могу их', 'расправить'],
+		word: ['крылья', 'не мои', 'я', 'никогда', 'не взлечу'],
 		mus: mus25,
 		img: 'https://i.ytimg.com/vi/sl3AOxaVHuU/hqdefault.jpg',
 		prompt: 'Не мешай, не мешай; Остаться одной — моя печаль; Улетай, улетай'
