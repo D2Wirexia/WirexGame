@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cb98e31-b6cd-4655-8ee2-e22ee5bbd92a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWords.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWordsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/MusicWords/MusicWordsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/PutInPlace/PutInPlace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/SomethingOne/SomethingOne.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommon.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommonContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GameRound/WhatCommon/WhatCommonContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/HeaderInfoTable/HeaderInfoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/HeaderInfoTable/HeaderInfoTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/MainMenu/MainMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainMenu/MainMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Timer/Timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Timer/Timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/game2/round_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/game2/round_3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -78,8 +65,19 @@
     <configuration name="tester4ik.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/tester4ik.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="Node.js.bush.js" />
         <item itemvalue="Node.js.tester4ik.js" />
         <item itemvalue="Node.js.Score.js" />
@@ -165,7 +163,7 @@
       <workItem from="1613900798495" duration="531000" />
       <workItem from="1614161736296" duration="10387000" />
       <workItem from="1615288734507" duration="615000" />
-      <workItem from="1615459899913" duration="22624000" />
+      <workItem from="1615459899913" duration="22933000" />
     </task>
     <servers />
   </component>
@@ -189,22 +187,22 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="378" y="324" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1613901332923" />
-    <state width="1259" height="263" key="GridCell.Tab.0.bottom" timestamp="1613664140093">
+    <state width="1259" height="263" key="GridCell.Tab.0.bottom" timestamp="1615485343776">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1613664140093" />
-    <state width="1259" height="263" key="GridCell.Tab.0.center" timestamp="1613664140093">
+    <state width="1259" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1615485343776" />
+    <state width="1259" height="263" key="GridCell.Tab.0.center" timestamp="1615485343775">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1613664140093" />
-    <state width="1259" height="263" key="GridCell.Tab.0.left" timestamp="1613664140093">
+    <state width="1259" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1615485343775" />
+    <state width="1259" height="263" key="GridCell.Tab.0.left" timestamp="1615485343775">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1613664140093" />
-    <state width="1259" height="263" key="GridCell.Tab.0.right" timestamp="1613664140093">
+    <state width="1259" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1615485343775" />
+    <state width="1259" height="263" key="GridCell.Tab.0.right" timestamp="1615485343776">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1613664140093" />
+    <state width="1259" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1615485343776" />
     <state width="1259" height="325" key="GridCell.Tab.1.bottom" timestamp="1610713389831">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

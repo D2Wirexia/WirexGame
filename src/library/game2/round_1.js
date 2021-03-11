@@ -139,7 +139,7 @@ export const WhatCommon = [
 		img: [
 			'https://blogs.elenasmodels.com/wp-content/uploads/2019/04/dengi.jpg',
 			'https://hr-portal.ru/files/mini/g-152-1170x773-1024x6771.jpg',
-			'https://cdn.shortpixel.ai/client/q_lossless,ret_img/https://onthedeep.com/wp-content/uploads/2019/11/ships-anchor-678x381.jpg'
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMwh3McfSGPsZeV3KO1U8pmwgNXTruoPlj6GVp152yv0MFR93r2DX4Fv9cPQicKZMhjfU&usqp=CAU'
 		],
 		answer: 'Поднять'
 	},
