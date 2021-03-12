@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/WirexGame/static/css/main.319b6087.chunk.css",
-    "main.js": "/WirexGame/static/js/main.af63154f.chunk.js",
-    "main.js.map": "/WirexGame/static/js/main.af63154f.chunk.js.map",
-    "runtime-main.js": "/WirexGame/static/js/runtime-main.bb3d1338.js",
-    "runtime-main.js.map": "/WirexGame/static/js/runtime-main.bb3d1338.js.map",
-    "static/js/2.8f36f6bb.chunk.js": "/WirexGame/static/js/2.8f36f6bb.chunk.js",
-    "static/js/2.8f36f6bb.chunk.js.map": "/WirexGame/static/js/2.8f36f6bb.chunk.js.map",
+    "main.js": "/WirexGame/static/js/main.d6532e87.chunk.js",
+    "main.js.map": "/WirexGame/static/js/main.d6532e87.chunk.js.map",
+    "runtime-main.js": "/WirexGame/static/js/runtime-main.863e0236.js",
+    "runtime-main.js.map": "/WirexGame/static/js/runtime-main.863e0236.js.map",
+    "static/js/2.12946084.chunk.js": "/WirexGame/static/js/2.12946084.chunk.js",
+    "static/js/2.12946084.chunk.js.map": "/WirexGame/static/js/2.12946084.chunk.js.map",
     "index.html": "/WirexGame/index.html",
-    "precache-manifest.7bd6275ccd41512b77741f10d8da7700.js": "/WirexGame/precache-manifest.7bd6275ccd41512b77741f10d8da7700.js",
+    "precache-manifest.66b33e2fdf2847d8f04a1666d1ca8205.js": "/WirexGame/precache-manifest.66b33e2fdf2847d8f04a1666d1ca8205.js",
     "service-worker.js": "/WirexGame/service-worker.js",
     "static/css/main.319b6087.chunk.css.map": "/WirexGame/static/css/main.319b6087.chunk.css.map",
-    "static/js/2.8f36f6bb.chunk.js.LICENSE.txt": "/WirexGame/static/js/2.8f36f6bb.chunk.js.LICENSE.txt",
+    "static/js/2.12946084.chunk.js.LICENSE.txt": "/WirexGame/static/js/2.12946084.chunk.js.LICENSE.txt",
     "static/media/backgroundText.png": "/WirexGame/static/media/backgroundText.6fed68fc.png",
     "static/media/all.min.css": "/WirexGame/static/media/fa-solid-900.ee09ad75.woff",
     "static/media/MainMenu.module.css": "/WirexGame/static/media/img.20f75f88.jpg",
@@ -52,9 +52,9 @@
     "static/media/note.png": "/WirexGame/static/media/note.85ef7fd7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb3d1338.js",
-    "static/js/2.8f36f6bb.chunk.js",
+    "static/js/runtime-main.863e0236.js",
+    "static/js/2.12946084.chunk.js",
     "static/css/main.319b6087.chunk.css",
-    "static/js/main.af63154f.chunk.js"
+    "static/js/main.d6532e87.chunk.js"
   ]
 }
