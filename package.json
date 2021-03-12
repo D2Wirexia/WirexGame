@@ -2,7 +2,7 @@
   "name": "transfer-personal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://d2wirexia.github.io/WirexGame",
+  "homepage": "https://d2wirexia.github.io/WirexGame",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
