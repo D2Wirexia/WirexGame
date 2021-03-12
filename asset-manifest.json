@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/WirexGame/static/css/main.319b6087.chunk.css",
-    "main.js": "/WirexGame/static/js/main.d6532e87.chunk.js",
-    "main.js.map": "/WirexGame/static/js/main.d6532e87.chunk.js.map",
+    "main.css": "/WirexGame/static/css/main.7381febc.chunk.css",
+    "main.js": "/WirexGame/static/js/main.4257c377.chunk.js",
+    "main.js.map": "/WirexGame/static/js/main.4257c377.chunk.js.map",
     "runtime-main.js": "/WirexGame/static/js/runtime-main.863e0236.js",
     "runtime-main.js.map": "/WirexGame/static/js/runtime-main.863e0236.js.map",
-    "static/js/2.12946084.chunk.js": "/WirexGame/static/js/2.12946084.chunk.js",
-    "static/js/2.12946084.chunk.js.map": "/WirexGame/static/js/2.12946084.chunk.js.map",
+    "static/js/2.fae46c7f.chunk.js": "/WirexGame/static/js/2.fae46c7f.chunk.js",
+    "static/js/2.fae46c7f.chunk.js.map": "/WirexGame/static/js/2.fae46c7f.chunk.js.map",
     "index.html": "/WirexGame/index.html",
-    "precache-manifest.66b33e2fdf2847d8f04a1666d1ca8205.js": "/WirexGame/precache-manifest.66b33e2fdf2847d8f04a1666d1ca8205.js",
+    "precache-manifest.8769d2397ae6694260a80765a0313f26.js": "/WirexGame/precache-manifest.8769d2397ae6694260a80765a0313f26.js",
     "service-worker.js": "/WirexGame/service-worker.js",
-    "static/css/main.319b6087.chunk.css.map": "/WirexGame/static/css/main.319b6087.chunk.css.map",
-    "static/js/2.12946084.chunk.js.LICENSE.txt": "/WirexGame/static/js/2.12946084.chunk.js.LICENSE.txt",
+    "static/css/main.7381febc.chunk.css.map": "/WirexGame/static/css/main.7381febc.chunk.css.map",
+    "static/js/2.fae46c7f.chunk.js.LICENSE.txt": "/WirexGame/static/js/2.fae46c7f.chunk.js.LICENSE.txt",
     "static/media/backgroundText.png": "/WirexGame/static/media/backgroundText.6fed68fc.png",
     "static/media/all.min.css": "/WirexGame/static/media/fa-solid-900.ee09ad75.woff",
     "static/media/MainMenu.module.css": "/WirexGame/static/media/img.20f75f88.jpg",
@@ -53,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.863e0236.js",
-    "static/js/2.12946084.chunk.js",
-    "static/css/main.319b6087.chunk.css",
-    "static/js/main.d6532e87.chunk.js"
+    "static/js/2.fae46c7f.chunk.js",
+    "static/css/main.7381febc.chunk.css",
+    "static/js/main.4257c377.chunk.js"
   ]
 }
