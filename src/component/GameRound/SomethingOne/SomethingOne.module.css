@@ -172,29 +172,40 @@
 	letter-spacing: 3px;
 }
 
-.timerBlock{
-	position: absolute;
-	top: 10px;
-	left: 50px;
-
-}
 .startTimer{
-	position: absolute;
+	position: relative;
+	background: #009095;
 	text-align: center;
-
+	width: 90px;
+	height: 50px;
+	left: 80px;
 	transition: all .3s linear;
+	box-shadow: inset -2px -2px 3px black,
+	inset 2px 2px 3px black;
+	border-radius: 10px 10px;
 }
 .startTimer i{
 	z-index: 2;
 	color: white;
-	transform: scale(2);
+	font-size: 36px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
 }
-.startTimer i:hover{
-	transform: scale(2.1);
-}
-.startTimer i:hover{
+.startTimer:hover{
+	background: #00a6ad;
+	box-shadow: -2px -2px 3px black,
+	2px 2px 3px black;
 	cursor: pointer;
 }
+.startTimer:hover i{
+	transform: translate(-50%, -50%) scale(1.1);
+	color: gold;
+
+}
+
 
 img.picture1, img.picture2, img.picture3{
 	overflow: hidden;

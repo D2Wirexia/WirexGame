@@ -1,12 +1,14 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import s from './PutInPlace.module.css'
-import $ from 'jquery'
 import './../../../css/all.min.css'
 
 
 const PutInPlace = (props) => {
 
-	let nowCountRound = props.roundNum;
+	let [nowCountRound, setNowCountRound] = useState(props.roundNum);
+	useEffect(() => {
+		setNowCountRound(props.roundNum)
+	}, [props.roundNum]);
 	let messCountRound = nowCountRound - 1;
 	let allCountRound = props.putInPlaces.length;
 
@@ -14,80 +16,137 @@ const PutInPlace = (props) => {
 	let randomizeMess = cloneMessConcept.sort(() => Math.random() - 0.5);*/
 
 	let randomizeMess = props.putInPlaces[messCountRound].conceptRand;
+	randomizeMess = ["Выберите вариант", ...randomizeMess];
 	let nowPoint = 0;
 
+	let [resultSelectValue1, setResultSelectValue1] = useState(null);
+	let [resultSelectValue2, setResultSelectValue2] = useState(null);
+	let [resultSelectValue3, setResultSelectValue3] = useState(null);
+	let [resultSelectValue4, setResultSelectValue4] = useState(null);
+	let [resultSelectValue5, setResultSelectValue5] = useState(null);
+	let [resultSelectValue6, setResultSelectValue6] = useState(null);
 
+	let [resultsSelectedValues, setResultsSelectedValues] = useState([]);
+	useEffect(()=>{
+		setResultsSelectedValues([resultSelectValue1, resultSelectValue2, resultSelectValue3,
+			 resultSelectValue4, resultSelectValue5, resultSelectValue6])
+	}, [resultSelectValue1, resultSelectValue2, resultSelectValue3,
+		resultSelectValue4, resultSelectValue5, resultSelectValue6]);
+
+	let [coincidence1, setCoincidence1] = useState(false);
+	let [coincidence2, setCoincidence2] = useState(false);
+	let [coincidence3, setCoincidence3] = useState(false);
+	let [coincidence4, setCoincidence4] = useState(false);
+	let [coincidence5, setCoincidence5] = useState(false);
+	let [coincidence6, setCoincidence6] = useState(false);
+
+	let [btnIsActive, setBtnIsActive] = useState(false);
+
+
+	const divColor = {
+		color: "yellow"
+	};
+	const borderColorTrue = {
+		border: "5px solid green"
+	};
+	const borderColorFalse = {
+		border: "5px solid red"
+	};
 
 	let variants =
 		 <div className={s.blockVariants}>
-			 <div className={s.variant} id="style_0">{randomizeMess[0]}</div>
-			 <div className={s.variant} id="style_1">{randomizeMess[1]}</div>
-			 <div className={s.variant} id="style_2">{randomizeMess[2]}</div>
-			 <div className={s.variant} id="style_3">{randomizeMess[3]}</div>
-			 <div className={s.variant} id="style_4">{randomizeMess[4]}</div>
-			 <div className={s.variant} id="style_5">{randomizeMess[5]}</div>
-		 </div>
+			 <div className={s.variant}
+					style={resultsSelectedValues.some(res => res === randomizeMess[1]) ? divColor : null}>{randomizeMess[1]}</div>
+			 <div className={s.variant}
+					style={resultsSelectedValues.some(res => res === randomizeMess[2]) ? divColor : null}>{randomizeMess[2]}</div>
+			 <div className={s.variant}
+					style={resultsSelectedValues.some(res => res === randomizeMess[3]) ? divColor : null}>{randomizeMess[3]}</div>
+			 <div className={s.variant}
+					style={resultsSelectedValues.some(res => res === randomizeMess[4]) ? divColor : null}>{randomizeMess[4]}</div>
+			 <div className={s.variant}
+					style={resultsSelectedValues.some(res => res === randomizeMess[5]) ? divColor : null}>{randomizeMess[5]}</div>
+			 <div className={s.variant}
+					style={resultsSelectedValues.some(res => res === randomizeMess[6]) ? divColor : null}>{randomizeMess[6]}</div>
+		 </div>;
 
-
+	const handleSelect1 = (event) => {
+			setResultSelectValue1(event.target.value)
+	};
+	const handleSelect2 = (event) => {
+		setResultSelectValue2(event.target.value);
+	};
+	const handleSelect3 = (event) => {
+		setResultSelectValue3(event.target.value);
+	};
+	const handleSelect4 = (event) => {
+		setResultSelectValue4(event.target.value);
+	};
+	const handleSelect5 = (event) => {
+		setResultSelectValue5(event.target.value);
+	};
+	const handleSelect6 = (event) => {
+		setResultSelectValue6(event.target.value);
+	};
 	let selectVariants1 =
-		 <select id="select1">
-			 <option selected disabled>Выберите вариант</option>
-			 <option value={randomizeMess[0]}>{randomizeMess[0]}</option>
-			 <option value={randomizeMess[1]}>{randomizeMess[1]}</option>
-			 <option value={randomizeMess[2]}>{randomizeMess[2]}</option>
-			 <option value={randomizeMess[3]}>{randomizeMess[3]}</option>
-			 <option value={randomizeMess[4]}>{randomizeMess[4]}</option>
-			 <option value={randomizeMess[5]}>{randomizeMess[5]}</option>
-		 </select>
+		 <select onChange={handleSelect1} value={resultSelectValue1} defaultValue={randomizeMess[0]}>
+				 <option selected value={randomizeMess[0]}>{randomizeMess[0]}</option>
+				 <option value={randomizeMess[1]}>{randomizeMess[1]}</option>
+				 <option value={randomizeMess[2]}>{randomizeMess[2]}</option>
+				 <option value={randomizeMess[3]}>{randomizeMess[3]}</option>
+				 <option value={randomizeMess[4]}>{randomizeMess[4]}</option>
+				 <option value={randomizeMess[5]}>{randomizeMess[5]}</option>
+				 <option value={randomizeMess[6]}>{randomizeMess[6]}</option>
+		 </select>;
+
 	let selectVariants2 =
-		 <select id="select2">
-			 <option selected disabled>Выберите вариант</option>
+		 <select onChange={handleSelect2} value={resultSelectValue2} defaultValue={randomizeMess[0]}>
 			 <option value={randomizeMess[0]}>{randomizeMess[0]}</option>
 			 <option value={randomizeMess[1]}>{randomizeMess[1]}</option>
 			 <option value={randomizeMess[2]}>{randomizeMess[2]}</option>
 			 <option value={randomizeMess[3]}>{randomizeMess[3]}</option>
 			 <option value={randomizeMess[4]}>{randomizeMess[4]}</option>
 			 <option value={randomizeMess[5]}>{randomizeMess[5]}</option>
+			 <option value={randomizeMess[6]}>{randomizeMess[6]}</option>
 		 </select>
 	let selectVariants3 =
-		 <select id="select3">
-			 <option selected disabled>Выберите вариант</option>
+		 <select onChange={handleSelect3} value={resultSelectValue3} defaultValue={randomizeMess[0]}>
 			 <option value={randomizeMess[0]}>{randomizeMess[0]}</option>
 			 <option value={randomizeMess[1]}>{randomizeMess[1]}</option>
 			 <option value={randomizeMess[2]}>{randomizeMess[2]}</option>
 			 <option value={randomizeMess[3]}>{randomizeMess[3]}</option>
 			 <option value={randomizeMess[4]}>{randomizeMess[4]}</option>
 			 <option value={randomizeMess[5]}>{randomizeMess[5]}</option>
+			 <option value={randomizeMess[6]}>{randomizeMess[6]}</option>
 		 </select>
 	let selectVariants4 =
-		 <select id="select4">
-			 <option selected disabled>Выберите вариант</option>
+		 <select onChange={handleSelect4} value={resultSelectValue4} defaultValue={randomizeMess[0]}>
 			 <option value={randomizeMess[0]}>{randomizeMess[0]}</option>
 			 <option value={randomizeMess[1]}>{randomizeMess[1]}</option>
 			 <option value={randomizeMess[2]}>{randomizeMess[2]}</option>
 			 <option value={randomizeMess[3]}>{randomizeMess[3]}</option>
 			 <option value={randomizeMess[4]}>{randomizeMess[4]}</option>
 			 <option value={randomizeMess[5]}>{randomizeMess[5]}</option>
+			 <option value={randomizeMess[6]}>{randomizeMess[6]}</option>
 		 </select>
 	let selectVariants5 =
-		 <select id="select5">
-			 <option selected disabled>Выберите вариант</option>
+		 <select onChange={handleSelect5} value={resultSelectValue5} defaultValue={randomizeMess[0]}>
 			 <option value={randomizeMess[0]}>{randomizeMess[0]}</option>
 			 <option value={randomizeMess[1]}>{randomizeMess[1]}</option>
 			 <option value={randomizeMess[2]}>{randomizeMess[2]}</option>
 			 <option value={randomizeMess[3]}>{randomizeMess[3]}</option>
 			 <option value={randomizeMess[4]}>{randomizeMess[4]}</option>
 			 <option value={randomizeMess[5]}>{randomizeMess[5]}</option>
+			 <option value={randomizeMess[6]}>{randomizeMess[6]}</option>
 		 </select>
 	let selectVariants6 =
-		 <select id="select6">
-			 <option selected disabled>Выберите вариант</option>
+		 <select onChange={handleSelect6} value={resultSelectValue6} defaultValue={randomizeMess[0]}>
 			 <option value={randomizeMess[0]}>{randomizeMess[0]}</option>
 			 <option value={randomizeMess[1]}>{randomizeMess[1]}</option>
 			 <option value={randomizeMess[2]}>{randomizeMess[2]}</option>
 			 <option value={randomizeMess[3]}>{randomizeMess[3]}</option>
 			 <option value={randomizeMess[4]}>{randomizeMess[4]}</option>
 			 <option value={randomizeMess[5]}>{randomizeMess[5]}</option>
+			 <option value={randomizeMess[6]}>{randomizeMess[6]}</option>
 		 </select>
 
 
@@ -101,7 +160,8 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[0]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[0]} alt="picture1" id={'selectVariants1'}/>
+				 <img src={props.putInPlaces[messCountRound].img[0]} alt="picture1"
+						style={btnIsActive ? coincidence1 ? borderColorTrue : borderColorFalse : null}/>
 				 <div className={s.selectVar}>{selectVariants1}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -112,7 +172,8 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[1]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[1]} alt="picture2" id={'selectVariants2'}/>
+				 <img src={props.putInPlaces[messCountRound].img[1]} alt="picture2"
+						style={btnIsActive ? coincidence2 ? borderColorTrue : borderColorFalse : null}/>
 				 <div className={s.selectVar}>{selectVariants2}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -123,7 +184,8 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[2]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[2]} alt="picture3" id={'selectVariants3'}/>
+				 <img src={props.putInPlaces[messCountRound].img[2]} alt="picture3"
+						style={btnIsActive ? coincidence3 ? borderColorTrue : borderColorFalse : null}/>
 				 <div className={s.selectVar}>{selectVariants3}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -134,7 +196,8 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[3]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[3]} alt="picture4" id={'selectVariants4'}/>
+				 <img src={props.putInPlaces[messCountRound].img[3]} alt="picture4"
+						style={btnIsActive ? coincidence4 ? borderColorTrue : borderColorFalse : null}/>
 				 <div className={s.selectVar}>{selectVariants4}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -145,7 +208,8 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[4]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[4]} alt="picture5" id={'selectVariants5'}/>
+				 <img src={props.putInPlaces[messCountRound].img[4]} alt="picture5"
+						style={btnIsActive ? coincidence5 ? borderColorTrue : borderColorFalse : null}/>
 				 <div className={s.selectVar}>{selectVariants5}</div>
 			 </div>
 			 <div className={s.imgVar}>
@@ -156,191 +220,68 @@ const PutInPlace = (props) => {
 							  :	<div className={s.answerBlock}>{props.putInPlaces[messCountRound].concept[5]}</div>
 					 }
 				 </div>
-				 <img src={props.putInPlaces[messCountRound].img[5]} alt="picture6" id={'selectVariants6'}/>
+				 <img src={props.putInPlaces[messCountRound].img[5]} alt="picture6"
+						style={btnIsActive ? coincidence6 ? borderColorTrue : borderColorFalse : null}/>
 				 <div className={s.selectVar}>{selectVariants6}</div>
 			 </div>
-		 </div>
+		 </div>;
 
 
 
 
-	$(document).ready(function(){
-		if(nowCountRound % 2 === 0){
-			props.roundTeamSet('Blue');
-		}else{
-			props.roundTeamSet('Red');
-		}
-	});
 
-	/*Отображение выбраного варианта*/
-
-	for(let i = 0; i < randomizeMess.length; i++){
-		if($('#select1 option:selected').html() === randomizeMess[i]){
-			props.chooseVar1($('#select1 option:selected').html());
-		}
-
-		if($('#select2 option:selected').html() === randomizeMess[i]){
-			if($('#style_0').html() === randomizeMess[i]){
-				$('#style_0').css('color', 'yellow');
-			}
-			if($('#style_1').html() === randomizeMess[i]){
-				$('#style_1').css('color', 'yellow');
-			}
-			if($('#style_2').html() === randomizeMess[i]){
-				$('#style_2').css('color', 'yellow');
-			}
-			if($('#style_3').html() === randomizeMess[i]){
-				$('#style_3').css('color', 'yellow');
-			}
-			if($('#style_4').html() === randomizeMess[i]){
-				$('#style_4').css('color', 'yellow');
-			}
-			if($('#style_5').html() === randomizeMess[i]){
-				$('#style_5').css('color', 'yellow');
-			}
-		}
-		if($('#select3 option:selected').html() === randomizeMess[i]){
-			if($('#style_0').html() === randomizeMess[i]){
-				$('#style_0').css('color', 'yellow');
-			}
-			if($('#style_1').html() === randomizeMess[i]){
-				$('#style_1').css('color', 'yellow');
-			}
-			if($('#style_2').html() === randomizeMess[i]){
-				$('#style_2').css('color', 'yellow');
-			}
-			if($('#style_3').html() === randomizeMess[i]){
-				$('#style_3').css('color', 'yellow');
-			}
-			if($('#style_4').html() === randomizeMess[i]){
-				$('#style_4').css('color', 'yellow');
-			}
-			if($('#style_5').html() === randomizeMess[i]){
-				$('#style_5').css('color', 'yellow');
-			}
-		}
-		if($('#select4 option:selected').html() === randomizeMess[i]){
-			if($('#style_0').html() === randomizeMess[i]){
-				$('#style_0').css('color', 'yellow');
-			}
-			if($('#style_1').html() === randomizeMess[i]){
-				$('#style_1').css('color', 'yellow');
-			}
-			if($('#style_2').html() === randomizeMess[i]){
-				$('#style_2').css('color', 'yellow');
-			}
-			if($('#style_3').html() === randomizeMess[i]){
-				$('#style_3').css('color', 'yellow');
-			}
-			if($('#style_4').html() === randomizeMess[i]){
-				$('#style_4').css('color', 'yellow');
-			}
-			if($('#style_5').html() === randomizeMess[i]){
-				$('#style_5').css('color', 'yellow');
-			}
-		}
-		if($('#select5 option:selected').html() === randomizeMess[i]){
-			if($('#style_0').html() === randomizeMess[i]){
-				$('#style_0').css('color', 'yellow');
-			}
-			if($('#style_1').html() === randomizeMess[i]){
-				$('#style_1').css('color', 'yellow');
-			}
-			if($('#style_2').html() === randomizeMess[i]){
-				$('#style_2').css('color', 'yellow');
-			}
-			if($('#style_3').html() === randomizeMess[i]){
-				$('#style_3').css('color', 'yellow');
-			}
-			if($('#style_4').html() === randomizeMess[i]){
-				$('#style_4').css('color', 'yellow');
-			}
-			if($('#style_5').html() === randomizeMess[i]){
-				$('#style_5').css('color', 'yellow');
-			}
-		}
-		if($('#select6 option:selected').html() === randomizeMess[i]){
-			if($('#style_0').html() === randomizeMess[i]){
-				$('#style_0').css('color', 'yellow');
-			}
-			if($('#style_1').html() === randomizeMess[i]){
-				$('#style_1').css('color', 'yellow');
-			}
-			if($('#style_2').html() === randomizeMess[i]){
-				$('#style_2').css('color', 'yellow');
-			}
-			if($('#style_3').html() === randomizeMess[i]){
-				$('#style_3').css('color', 'yellow');
-			}
-			if($('#style_4').html() === randomizeMess[i]){
-				$('#style_4').css('color', 'yellow');
-			}
-			if($('#style_5').html() === randomizeMess[i]){
-				$('#style_5').css('color', 'yellow');
-			}
-		}
-
+	if(nowCountRound % 2 === 0){
+		props.roundTeamSet('Blue');
+	}else{
+		props.roundTeamSet('Red');
 	}
-	if($('#style_0').html() === props.chooseVariants1){
-		$('#style_0').css('color', 'yellow');
-	}
-	if($('#style_1').html() === props.chooseVariants1){
-		$('#style_1').css('color', 'yellow');
-	}
-	if($('#style_2').html() === props.chooseVariants1){
-		$('#style_2').css('color', 'yellow');
-	}
-	if($('#style_3').html() === props.chooseVariants1){
-		$('#style_3').css('color', 'yellow');
-	}
-	if($('#style_4').html() === props.chooseVariants1){
-		$('#style_4').css('color', 'yellow');
-	}
-	if($('#style_5').html() === props.chooseVariants1){
-		$('#style_5').css('color', 'yellow');
-	}
-
 
 	return (
-		 <div id={'styleBackground'} className={s.round4}>
+		 <div className={s.round4}>
 
 			 <div className={s.messBtn}>
 				 <button onClick={() => {
-					 if($('#select1 option:selected').html() === props.putInPlaces[messCountRound].concept[0]){
+					 if(resultSelectValue1 === props.putInPlaces[messCountRound].concept[0]){
 						 nowPoint += 1;
-						 $('#selectVariants1').css('border', '5px solid green');
+						 setBtnIsActive(true);
+						 setCoincidence1(true);
 					 }else{
-						 $('#selectVariants1').css('border', '5px solid red');
+						 setCoincidence1(false);
 					 }
-					 if($('#select2 option:selected').html() === props.putInPlaces[messCountRound].concept[1]){
+					 if(resultSelectValue2 === props.putInPlaces[messCountRound].concept[1]){
 						 nowPoint += 1;
-						 $('#selectVariants2').css('border', '5px solid green');
+						 setBtnIsActive(true);
+						 setCoincidence2(true);
 					 }else{
-						 $('#selectVariants2').css('border', '5px solid red');
+						 setCoincidence2(false);
 					 }
-					 if($('#select3 option:selected').html() === props.putInPlaces[messCountRound].concept[2]){
+					 if(resultSelectValue3 === props.putInPlaces[messCountRound].concept[2]){
 						 nowPoint += 1;
-						 $('#selectVariants3').css('border', '5px solid green');
+						 setBtnIsActive(true);
+						 setCoincidence3(true);
 					 }else{
-						 $('#selectVariants3').css('border', '5px solid red');
+						 setCoincidence3(false);
 					 }
-					 if($('#select4 option:selected').html() === props.putInPlaces[messCountRound].concept[3]){
+					 if(resultSelectValue4 === props.putInPlaces[messCountRound].concept[3]){
 						 nowPoint += 1;
-						 $('#selectVariants4').css('border', '5px solid green');
+						 setBtnIsActive(true);
+						 setCoincidence4(true);
 					 }else{
-						 $('#selectVariants4').css('border', '5px solid red');
+						 setCoincidence4(false);
 					 }
-					 if($('#select5 option:selected').html() === props.putInPlaces[messCountRound].concept[4]){
+					 if(resultSelectValue5 === props.putInPlaces[messCountRound].concept[4]){
 						 nowPoint += 1;
-						 $('#selectVariants5').css('border', '5px solid green');
+						 setBtnIsActive(true);
+						 setCoincidence5(true);
 					 }else{
-						 $('#selectVariants5').css('border', '5px solid red');
+						 setCoincidence5(false);
 					 }
-					 if($('#select6 option:selected').html() === props.putInPlaces[messCountRound].concept[5]){
+					 if(resultSelectValue6 === props.putInPlaces[messCountRound].concept[5]){
 						 nowPoint += 1;
-						 $('#selectVariants6').css('border', '5px solid green');
+						 setBtnIsActive(true);
+						 setCoincidence6(true);
 					 }else{
-						 $('#selectVariants6').css('border', '5px solid red');
+						 setCoincidence6(false);
 					 }
 					 if(props.isActiveBtnCountPoints){
 						 if(nowCountRound % 2 === 0){
@@ -351,6 +292,7 @@ const PutInPlace = (props) => {
 					 	props.activeBtnCountPoints(false);
 					 }
 					 props.activeBtnCountPoints(false);
+					 setBtnIsActive(true);
 				 }}>Посчитать балы</button>
 
 				 <button onClick={() => {
@@ -366,22 +308,10 @@ const PutInPlace = (props) => {
 						 nowPoint = 0;
 					 }
 					 props.activeBtnCountPoints(true);
-					 $('#select1').prop('selectedIndex', 0);
-					 $('#select2').prop('selectedIndex', 0);
-					 $('#select3').prop('selectedIndex', 0);
-					 $('#select4').prop('selectedIndex', 0);
-					 $('#select5').prop('selectedIndex', 0);
-					 $('#select6').prop('selectedIndex', 0);
 					 props.showAnswerPutInPlace(false);
-					 $('#selectVariants1').css('border', 'none');
-					 $('#selectVariants2').css('border', 'none');
-					 $('#selectVariants3').css('border', 'none');
-					 $('#selectVariants4').css('border', 'none');
-					 $('#selectVariants5').css('border', 'none');
-					 $('#selectVariants6').css('border', 'none');
-
+					 setBtnIsActive(false);
 				 }}>
-					 <i className="fas fa-chevron-circle-left"></i>
+					 <i className="fas fa-chevron-circle-left"/>
 				 </button>
 			 </div>
 
@@ -392,21 +322,10 @@ const PutInPlace = (props) => {
 						 nowPoint = 0;
 					 }
 					 props.activeBtnCountPoints(true);
-					 $('#select1').prop('selectedIndex', 0);
-					 $('#select2').prop('selectedIndex', 0);
-					 $('#select3').prop('selectedIndex', 0);
-					 $('#select4').prop('selectedIndex', 0);
-					 $('#select5').prop('selectedIndex', 0);
-					 $('#select6').prop('selectedIndex', 0);
 					 props.showAnswerPutInPlace(false);
-					 $('#selectVariants1').css('border', 'none');
-					 $('#selectVariants2').css('border', 'none');
-					 $('#selectVariants3').css('border', 'none');
-					 $('#selectVariants4').css('border', 'none');
-					 $('#selectVariants5').css('border', 'none');
-					 $('#selectVariants6').css('border', 'none');
+					 setBtnIsActive(false);
 				 }}>
-					 <i className="fas fa-chevron-circle-right"></i>
+					 <i className="fas fa-chevron-circle-right"/>
 				 </button>
 			 </div>
 

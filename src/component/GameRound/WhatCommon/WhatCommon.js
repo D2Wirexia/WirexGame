@@ -68,13 +68,13 @@ const WhatCommon = (props) => {
 				 </button>
 			 </div>
 			 <div className={s.timerBlock}>
-				 <div className={s.startTimer}>
-					 <i className="far fa-play-circle" onClick={() =>{
-					 	setIsFetch(res => !res);
-					 }}/>
-					 <Timer time={props.timeSet} isFetchButtonStartTimer={isFetch}
-							  removeTimer={removeTimer}/>
+				 <div className={s.startTimer} onClick={() =>{
+					 setIsFetch(res => !res);
+				 }}>
+					 <i className="far fa-play-circle"/>
 				 </div>
+				 <Timer time={props.timeSet} isFetchButtonStartTimer={isFetch}
+						  removeTimer={removeTimer}/>
 			 </div>
 			 {whatComImg}
 			 <div className={s.name}>
