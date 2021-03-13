@@ -88,6 +88,50 @@ const MusicWords = (props) => {
 	}
 	return (
 		 <div className={s.round3} id="styleBackground">
+			 <div className={s.prev}>
+				 <button onClick={() => {
+					 if (nowCountRound > 1) {
+						 props.prevRound()
+					 }
+					 props.visionWordOneAC(false);
+					 props.visionWordTwoAC(false);
+					 props.visionWordThreeAC(false);
+					 props.visionWordFourAC(false);
+					 props.visionWordFiveAC(false);
+					 props.activeBtnCountPoints(true);
+					 props.showNameAC(false);
+					 props.showPromptAC(false);
+					 setRemoveTimer(true);
+					 setPositionNoteImg(false);
+					 if (nowCountRound === props.roundNum) {
+						 setPositionNoteImg(true);
+					 }
+				 }}>
+					 <i className="fas fa-chevron-circle-left"/>
+				 </button>
+			 </div>
+			 <div className={s.next}>
+				 <button onClick={() => {
+					 if (nowCountRound < allCountRound) {
+						 props.nextRound()
+					 }
+					 props.visionWordOneAC(false);
+					 props.visionWordTwoAC(false);
+					 props.visionWordThreeAC(false);
+					 props.visionWordFourAC(false);
+					 props.visionWordFiveAC(false);
+					 props.activeBtnCountPoints(true);
+					 props.showNameAC(false);
+					 props.showPromptAC(false);
+					 setRemoveTimer(true);
+					 setPositionNoteImg(false);
+					 if (nowCountRound === props.roundNum) {
+						 setPositionNoteImg(true);
+					 }
+				 }}>
+					 <i className="fas fa-chevron-circle-right"/>
+				 </button>
+			 </div>
 			 <div className={s.messBtn}>
 				 <button onClick={() => {
 					 if (props.visionWordOne) {
@@ -160,50 +204,7 @@ const MusicWords = (props) => {
 						  : null
 				 }
 			 </div>
-			 <div className={s.prev}>
-				 <button onClick={() => {
-					 if (nowCountRound > 1) {
-						 props.prevRound()
-					 }
-					 props.visionWordOneAC(false);
-					 props.visionWordTwoAC(false);
-					 props.visionWordThreeAC(false);
-					 props.visionWordFourAC(false);
-					 props.visionWordFiveAC(false);
-					 props.activeBtnCountPoints(true);
-					 props.showNameAC(false);
-					 props.showPromptAC(false);
-					 setRemoveTimer(true);
-					 setPositionNoteImg(false);
-					 if (nowCountRound === props.roundNum) {
-						 setPositionNoteImg(true);
-					 }
-				 }}>
-					 <i className="fas fa-chevron-circle-left"/>
-				 </button>
-			 </div>
-			 <div className={s.next}>
-				 <button onClick={() => {
-					 if (nowCountRound < allCountRound) {
-						 props.nextRound()
-					 }
-					 props.visionWordOneAC(false);
-					 props.visionWordTwoAC(false);
-					 props.visionWordThreeAC(false);
-					 props.visionWordFourAC(false);
-					 props.visionWordFiveAC(false);
-					 props.activeBtnCountPoints(true);
-					 props.showNameAC(false);
-					 props.showPromptAC(false);
-					 setRemoveTimer(true);
-					 setPositionNoteImg(false);
-					 if (nowCountRound === props.roundNum) {
-						 setPositionNoteImg(true);
-					 }
-				 }}>
-					 <i className="fas fa-chevron-circle-right"/>
-				 </button>
-			 </div>
+
 			 <div className={positionNoteImg ? s.noteImg : s.noteImgShadow}>
 				 <img src={note} alt="imgNote"/>
 			 </div>

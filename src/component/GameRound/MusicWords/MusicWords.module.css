@@ -216,9 +216,8 @@
 	height: 10vh;
 }
 .prev{
-	position: absolute;
-	top: 0;
-	left: 0;
+	position: relative;
+	float: left;
 	opacity: .4;
 }
 .prev:hover{
@@ -231,9 +230,9 @@
 	transition: all .2s linear;
 }
 .next{
-	position: absolute;
-	top: 0;
-	right: 0;
+	position: relative;
+	float: right;
+
 	opacity: .4;
 }
 .next:hover{
@@ -295,7 +294,41 @@
 	letter-spacing: 3px;
 }
 /*Большие планшеты*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1080px){
+	.noteImg{
+		display: none;
+	}
+	.mus img{
+		height: 250px;
+	}
+	.containerWordBlock{
+		width: 90%;
+	}
+	.blockWord{
+		width: 150px;
+		font-size: 24px;
+		height: 50px;
+	}
+	.messBtn{
+		font-size: 24px;
+		left: 60%;
+	}
+	.messBtn button{
+		width: 200px;
+	}
+	.messBtn button:first-child{
+		border-radius: 0;
+	}
+	.messBtn button:last-child{
+		border-radius: 0;
+	}
+	.timerBlock{
+		top: 0;
+		left: 30px;
+	}
+}
+
+	@media screen and (max-width: 767px) {
 	.noteImg{
 		display: none;
 	}
