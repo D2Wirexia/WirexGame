@@ -257,28 +257,22 @@
 	zoom: 1;
 }
 @media (max-width: 820px){
-	.red{
-		width: 100px;
-	}
-	.blue{
-		width: 100px;
-	}
 	.name{
 		font-size: 22px;
 	}
 	.score{
 		font-size: 22px;
 	}
-	.refactors, .led{
-		width: 100px;
+	.red, .blue, .refactors, .led{
+		width: 60px;
 	}
 	.arrBntRound{
-		display: none;
+		display: block;
 	}
-	.showArrBntRound{
+	/*.showArrBntRound{
 		display: block;
 	}
 	.showArrBntRound:hover + .arrBntRound{
 		display: block;
-	}
+	}*/
 }
