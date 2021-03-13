@@ -239,8 +239,8 @@ const PutInPlace = (props) => {
 	return (
 		 <div className={s.round4}>
 
-			 <div className={s.messBtn}>
-				 <button onClick={() => {
+			 <div className={s.body_button}>
+				 <div className={s.button_hola} onClick={() => {
 					 if(resultSelectValue1 === props.putInPlaces[messCountRound].concept[0]){
 						 nowPoint += 1;
 						 setBtnIsActive(true);
@@ -293,11 +293,10 @@ const PutInPlace = (props) => {
 					 }
 					 props.activeBtnCountPoints(false);
 					 setBtnIsActive(true);
-				 }}>Посчитать балы</button>
-
-				 <button onClick={() => {
+				 }}><span>Посчитать балы</span></div>
+				 <div className={s.button_hola} onClick={() => {
 					 props.showAnswerPutInPlace(true)
-				 }}>Ответ</button>
+				 }}><span>Ответ</span></div>
 			 </div>
 
 

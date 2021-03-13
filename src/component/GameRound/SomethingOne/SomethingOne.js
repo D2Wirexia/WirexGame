@@ -83,8 +83,8 @@ const SomethingOne = (props) => {
 	});
 	return (
 		 <div className={s.round2}>
-			 <div className={s.messBtn}>
-				 <button onClick={() => {
+			 <div className={s.body_button}>
+				 <div className={s.button_hola} onClick={() => {
 					 if (props.varOne || props.varTwo || props.varThree) {
 						 if (props.oneOfTheThree[messCountRound].answer === 1) {
 							 $('#one').css('border', '6px solid green');
@@ -150,8 +150,8 @@ const SomethingOne = (props) => {
 					 } else {
 						 alert("Выберите один из вариантов ответа");
 					 }
-				 }}>Ответ
-				 </button>
+				 }}><span>Ответ</span>
+				 </div>
 			 </div>
 			 <div className={s.prev} id="prevBtn">
 				 <button onClick={() => {

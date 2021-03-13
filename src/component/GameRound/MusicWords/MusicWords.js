@@ -132,8 +132,8 @@ const MusicWords = (props) => {
 					 <i className="fas fa-chevron-circle-right"/>
 				 </button>
 			 </div>
-			 <div className={s.messBtn}>
-				 <button onClick={() => {
+			 <div className={s.body_button}>
+				 <div className={s.button_hola} onClick={() => {
 					 if (props.visionWordOne) {
 						 maxPointOnTask -= 1;
 					 }
@@ -169,9 +169,9 @@ const MusicWords = (props) => {
 					 props.showPromptAC(false);
 					 setRemoveTimer(true);
 					 setPositionNoteImg(false);
-				 }}>Посчитать балы
-				 </button>
-				 <button onClick={() => {
+				 }}><span>Посчитать балы</span>
+				 </div>
+				 <div className={s.button_hola} onClick={() => {
 					 props.showNameAC(true);
 					 props.visionWordOneAC(true);
 					 props.visionWordTwoAC(true);
@@ -182,11 +182,11 @@ const MusicWords = (props) => {
 					 setRemoveTimer(true);
 					 setPositionNoteImg(false);
 
-				 }}>Ответ
-				 </button>
+				 }}><span>Ответ</span>
+				 </div>
 			 </div>
 			 <div className={s.answer}>
-				 {props.showName ? props.musicWord[massCountData].name : null}
+				 <span>{props.showName ? props.musicWord[massCountData].name : null}</span>
 			 </div>
 			 <div className={s.mus}>
 				 {props.showName ?

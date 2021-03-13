@@ -6,7 +6,7 @@ import {
 	changeScoreRed,
 	updateScoreBlueAC,
 	updateScoreRedAC,
-	setCountRound
+	setCountRound, roundTeamSet
 } from "../../store/NavigationsReducer";
 
 class InfoTableContainer extends React.Component {
@@ -30,5 +30,5 @@ let mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {
-	updateScoreRedAC, updateScoreBlueAC, changeScoreRed, changeScoreBlue, setCountRound
+	updateScoreRedAC, updateScoreBlueAC, changeScoreRed, changeScoreBlue, setCountRound, roundTeamSet
 })(InfoTableContainer);

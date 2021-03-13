@@ -22,28 +22,28 @@ const WhatCommon = (props) => {
 	nowCountRound % 2 === 0 ? props.roundTeamSet('Red') : props.roundTeamSet('Blue');
 	return (
 		 <div className={s.round1} id={'styleBackground'}>
-			 <div className={s.messBtn}>
-				 <button onClick={() => {
+			 <div className={s.body_button}>
+				 <div className={s.button_hola} onClick={() => {
 					 if (nowCountRound % 2 === 0) {
 						 props.addPointRed(1);
 					 } else {
 						 props.addPointBlue(1);
 					 }
-				 }}>Верно!
-				 </button>
-				 <button onClick={() => {
+				 }}><span>Верно!</span>
+				 </div>
+				 <div className={s.button_hola} onClick={() => {
 					 if (nowCountRound % 2 === 0) {
 						 props.addPointRed(-1);
 					 } else {
 						 props.addPointBlue(-1);
 					 }
-				 }}>Не верно!
-				 </button>
-				 <button onClick={() => {
+				 }}><span>Не верно!</span>
+				 </div>
+				 <div className={s.button_hola} onClick={() => {
 					 props.showAnswerWhatCommon(true);
 					 setRemoveTimer(true);
-				 }}>Ответ
-				 </button>
+				 }}><span>Ответ</span>
+				 </div>
 			 </div>
 			 <div className={s.prev}>
 				 <button onClick={() => {

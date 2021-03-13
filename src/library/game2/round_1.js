@@ -43,7 +43,7 @@ export const WhatCommon = [
 		img: [
 			'https://st2.depositphotos.com/1591133/6848/i/600/depositphotos_68481619-stock-photo-old-town-in-europe-at.jpg',
 			'https://proza.ru/pics/2016/05/03/1609.jpg',
-			'https://d2p8jjwwnx090z.cloudfront.net/715/954/689/-89996999-1tmjp8a-c6360goo96nfr2f/original/avatar.jpg',
+			'https://24-info.pro/uploads/posts/2018-05/1527230784_1581_00.jpg',
 		],
 		answer: 'Проход'
 	},

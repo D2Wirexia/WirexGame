@@ -2,6 +2,7 @@ import React from "react";
 import s from './MainMenu.module.css'
 import autograph from './../../library/mainWirexia.png'
 import './../../css/all.min.css'
+import backSong from './../../library/backsong.mp3'
 
 const MainMenu = (props) => {
 
@@ -33,6 +34,7 @@ const MainMenu = (props) => {
 	};
 	return(
 		 <div className={s.mainMenu}>
+			 <audio preload="true" autoPlay="autoPlay" loop src={backSong}/>
 			 <div className={s.backImg}/>
 			 <div className={s.teams}>
 				 <h2>W.GAME</h2>

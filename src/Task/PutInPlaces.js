@@ -28,7 +28,7 @@ export const PutInPlaces = [
 			'https://www.gastronom.ru/binfiles/images/20171113/b6442610.jpg',
 			'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Manchester_tart.jpg/1200px-Manchester_tart.jpg',
 			'https://ic.pics.livejournal.com/enmsk/60235118/812301/812301_900.jpg',
-			'https://lh3.googleusercontent.com/proxy/-pH4O-x3qBLzHE3JsnASuh6eb9IroGUe8vaLZSuyeKVPFv-PBgbqN1qLy2A1XHGNVhc5I39kuqLzG10hTy3ohRhRyvi-0ZsKXUfFkK4k-BKgQX2GmKuW',
+			'https://lh3.googleusercontent.com/proxy/88G7olZgXnpaQ5EfwIgg-inevvet8bLhDYQETQD5EnfR82ppJJGnBNFWu8ptiz3bd26Y6prJWoe2ePzBTuSV1Bg7vh1DIqMEQ9srBd0d3pUVQXIO80y2',
 			'https://grandkulinar.ru/uploads/posts/2017-06/1498046910_sopapijyas-s-shokoladnym-sousom.jpg',
 			'https://files7.adme.ru/files/news/part_122/1220860/8076810-650-1458827613-gastronomia-4-1024x683.jpg',
 		],
