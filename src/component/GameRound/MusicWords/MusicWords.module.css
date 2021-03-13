@@ -294,7 +294,42 @@
 	transform:  rotateZ(6deg) rotateX(-15deg) rotateY(20deg);
 	letter-spacing: 3px;
 }
-@media (max-width: 620px){
+/*Средние планшеты*/
+@media screen and (max-width: 767px) {
+	.noteImg{
+		display: none;
+	}
+	.mus img{
+		height: 250px;
+	}
+	.containerWordBlock{
+		width: 90%;
+	}
+	.blockWord{
+		width: 150px;
+		font-size: 24px;
+		height: 50px;
+	}
+	.messBtn{
+		font-size: 24px;
+		left: 60%;
+	}
+	.messBtn button{
+		width: 200px;
+	}
+	.messBtn button:first-child{
+		border-radius: 0;
+	}
+	.messBtn button:last-child{
+		border-radius: 0;
+		margin-top: -30px;
+	}
+	.timerBlock{
+		top: 0;
+		left: 30px;
+	}
+}
+@media screen and (max-width: 479px) {
 	.noteImg{
 		display: none;
 	}

@@ -1,7 +1,6 @@
 import React from "react";
 import s from './HeaderInfoTable.module.css'
 import {NavLink} from 'react-router-dom'
-import $ from 'jquery'
 
 function HeaderInfoTable(props) {
 
@@ -17,38 +16,24 @@ function HeaderInfoTable(props) {
 		props.updateScoreBlueAC(text)
 	};
 
-	$(document).ready(function() {
-		if (props.roundTeam === 'Red') {
-			$('#led1').css('background', '#ffff00');
-			$('#led1').css('box-shadow', '1px 1px 2px #ffee35,\n' +
-				 '\t\t 1px -1px 2px #ffee35,\n' +
-				 '\t\t 0 2px #fffe60,\n' +
-				 '\t\t 0 -2px #fffe60,\n' +
-				 '\t\t 1px 1px 5px #ffff9d,\n' +
-				 '\t\t -1px -1px 5px #ffff9d,\n' +
-				 '\t\t 2px 2px 15px #f8ffcc,\n' +
-				 '\t\t -2px -2px 15px #f8ffcc');
-			$('#led2').css('background', 'none');
-			$('#led2').css('box-shadow', 'none');
-		} else if(props.roundTeam === 'Blue'){
-			$('#led2').css('background', '#ffff00');
-			$('#led2').css('box-shadow', '1px 1px 2px #ffee35,\n' +
-				 '\t\t 1px -1px 2px #ffee35,\n' +
-				 '\t\t 0 2px #fffe60,\n' +
-				 '\t\t 0 -2px #fffe60,\n' +
-				 '\t\t 1px 1px 5px #ffff9d,\n' +
-				 '\t\t -1px -1px 5px #ffff9d,\n' +
-				 '\t\t 2px 2px 15px #f8ffcc,\n' +
-				 '\t\t -2px -2px 15px #f8ffcc');
-			$('#led1').css('background', 'none');
-			$('#led1').css('box-shadow', 'none');
-		}
-	});
-
+	const lightLed = {
+		"background": '#ffff00',
+		"box-shadow": '1px 1px 2px #ffee35,\n' +
+			 '\t\t 1px -1px 2px #ffee35,\n' +
+			 '\t\t 0 2px #fffe60,\n' +
+			 '\t\t 0 -2px #fffe60,\n' +
+			 '\t\t 1px 1px 5px #ffff9d,\n' +
+			 '\t\t -1px -1px 5px #ffff9d,\n' +
+			 '\t\t 2px 2px 15px #f8ffcc,\n' +
+			 '\t\t -2px -2px 15px #f8ffcc'
+	};
+	const colorTeam = {
+		color: "#ffff00"
+	};
 	return (
 		 <div className={s.header}>
 
-			 <div className={s.red}>
+			 <div className={s.red} style={props.roundTeam === 'Red' ? colorTeam : null}>
 				 <div className={s.name}>
 					 {props.nameTeamRed}
 				 </div>
@@ -62,7 +47,7 @@ function HeaderInfoTable(props) {
 							  value={props.updateScoreRed}
 					 />
 					 <button onClick={() => { props.changeScoreRed(Number(props.updateScoreRed))}}>Изменить</button>
-					 <div className={s.led} id="led1"/>
+					 <div className={s.led} style={props.roundTeam === 'Red' ? lightLed : null}/>
 				 </div>
 			 </div>
 
@@ -117,7 +102,7 @@ function HeaderInfoTable(props) {
 				 </ul>
 			 </div>
 
-			 <div className={s.blue}>
+			 <div className={s.blue} style={props.roundTeam === 'Blue' ? colorTeam : null}>
 				 <div className={s.upBlock}>
 					 <div className={s.name}>
 						 {props.nameTeamBlue}
@@ -132,7 +117,7 @@ function HeaderInfoTable(props) {
 							  onChange={onCountPointsBlue}
 							  value={props.updateScoreBlue}/>
 					 <button onClick={() => { props.changeScoreBlue(Number(props.updateScoreBlue))}}>Изменить</button>
-				 <div className={s.led} id="led2"/>
+				 <div className={s.led} style={props.roundTeam === 'Blue' ? lightLed : null}/>
 				 </div>
 			 </div>
 
