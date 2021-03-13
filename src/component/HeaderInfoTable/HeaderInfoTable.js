@@ -72,7 +72,7 @@ function HeaderInfoTable(props) {
 					 	<img src={logo}/>
 					 </NavLink>
 				 </div>*/}
-
+				<div className={s.showArrBntRound}>Перейти к следующему раунду</div>
 				 <ul className={s.arrBntRound}>
 					<li>
 						<NavLink to={'/'}
@@ -115,7 +115,6 @@ function HeaderInfoTable(props) {
 					 </NavLink>
 		 </li>
 				 </ul>
-
 			 </div>
 
 			 <div className={s.blue}>
