@@ -35,36 +35,36 @@ const MusicWords = (props) => {
 				 !props.visionWordOne
 					  ? <div className={s.blockWord} onClick={() => {
 						  props.visionWordOneAC(true)
-					  }}>???</div>
-					  : <div className={s.blockWord}>{props.musicWord[massCountData].word[0]}</div>
+					  }}><span>???</span></div>
+					  : <div className={s.blockWord}><span>{props.musicWord[massCountData].word[0]}</span></div>
 			 }
 			 {
 				 !props.visionWordTwo
 					  ? <div className={s.blockWord} onClick={() => {
 						  props.visionWordTwoAC(true)
-					  }}>???</div>
-					  : <div className={s.blockWord}>{props.musicWord[massCountData].word[1]}</div>
+					  }}><span>???</span></div>
+					  : <div className={s.blockWord}><span>{props.musicWord[massCountData].word[1]}</span></div>
 			 }
 			 {
 				 !props.visionWordThree
 					  ? <div className={s.blockWord} onClick={() => {
 						  props.visionWordThreeAC(true)
 					  }}>???</div>
-					  : <div className={s.blockWord}>{props.musicWord[massCountData].word[2]}</div>
+					  : <div className={s.blockWord}><span>{props.musicWord[massCountData].word[2]}</span></div>
 			 }
 			 {
 				 !props.visionWordFour
 					  ? <div className={s.blockWord} onClick={() => {
 						  props.visionWordFourAC(true)
 					  }}>???</div>
-					  : <div className={s.blockWord}>{props.musicWord[massCountData].word[3]}</div>
+					  : <div className={s.blockWord}><span>{props.musicWord[massCountData].word[3]}</span></div>
 			 }
 			 {
 				 !props.visionWordFive
 					  ? <div className={s.blockWord} onClick={() => {
 						  props.visionWordFiveAC(true)
 					  }}>???</div>
-					  : <div className={s.blockWord}>{props.musicWord[massCountData].word[4]}</div>
+					  : <div className={s.blockWord}><span>{props.musicWord[massCountData].word[4]}</span></div>
 			 }
 		 </div>;
 	let countOpenAnswer = 0;
