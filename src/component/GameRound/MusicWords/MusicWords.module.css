@@ -294,8 +294,8 @@
 	transform:  rotateZ(6deg) rotateX(-15deg) rotateY(20deg);
 	letter-spacing: 3px;
 }
-/*Средние планшеты*/
-@media screen and (max-width: 767px) {
+/*Большие планшеты*/
+@media screen and (max-width: 991px) {
 	.noteImg{
 		display: none;
 	}
