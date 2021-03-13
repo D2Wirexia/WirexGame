@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/WirexGame/static/css/main.7ccb4f41.chunk.css",
-    "main.js": "/WirexGame/static/js/main.ad470bfe.chunk.js",
-    "main.js.map": "/WirexGame/static/js/main.ad470bfe.chunk.js.map",
+    "main.css": "/WirexGame/static/css/main.5e6e7412.chunk.css",
+    "main.js": "/WirexGame/static/js/main.f0310447.chunk.js",
+    "main.js.map": "/WirexGame/static/js/main.f0310447.chunk.js.map",
     "runtime-main.js": "/WirexGame/static/js/runtime-main.863e0236.js",
     "runtime-main.js.map": "/WirexGame/static/js/runtime-main.863e0236.js.map",
     "static/js/2.fae46c7f.chunk.js": "/WirexGame/static/js/2.fae46c7f.chunk.js",
     "static/js/2.fae46c7f.chunk.js.map": "/WirexGame/static/js/2.fae46c7f.chunk.js.map",
     "index.html": "/WirexGame/index.html",
-    "precache-manifest.c55f3e8d08d391b82832de120480cdd4.js": "/WirexGame/precache-manifest.c55f3e8d08d391b82832de120480cdd4.js",
+    "precache-manifest.f994919644af4ac1e19127b4370c2877.js": "/WirexGame/precache-manifest.f994919644af4ac1e19127b4370c2877.js",
     "service-worker.js": "/WirexGame/service-worker.js",
-    "static/css/main.7ccb4f41.chunk.css.map": "/WirexGame/static/css/main.7ccb4f41.chunk.css.map",
+    "static/css/main.5e6e7412.chunk.css.map": "/WirexGame/static/css/main.5e6e7412.chunk.css.map",
     "static/js/2.fae46c7f.chunk.js.LICENSE.txt": "/WirexGame/static/js/2.fae46c7f.chunk.js.LICENSE.txt",
     "static/media/backgroundText.png": "/WirexGame/static/media/backgroundText.6fed68fc.png",
     "static/media/all.min.css": "/WirexGame/static/media/fa-solid-900.ee09ad75.woff",
@@ -54,7 +54,7 @@
   "entrypoints": [
     "static/js/runtime-main.863e0236.js",
     "static/js/2.fae46c7f.chunk.js",
-    "static/css/main.7ccb4f41.chunk.css",
-    "static/js/main.ad470bfe.chunk.js"
+    "static/css/main.5e6e7412.chunk.css",
+    "static/js/main.f0310447.chunk.js"
   ]
 }
