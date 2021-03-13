@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/WirexGame/static/css/main.da198c18.chunk.css",
-    "main.js": "/WirexGame/static/js/main.52a8ee7d.chunk.js",
-    "main.js.map": "/WirexGame/static/js/main.52a8ee7d.chunk.js.map",
+    "main.css": "/WirexGame/static/css/main.46c0f1d7.chunk.css",
+    "main.js": "/WirexGame/static/js/main.5570ab52.chunk.js",
+    "main.js.map": "/WirexGame/static/js/main.5570ab52.chunk.js.map",
     "runtime-main.js": "/WirexGame/static/js/runtime-main.863e0236.js",
     "runtime-main.js.map": "/WirexGame/static/js/runtime-main.863e0236.js.map",
-    "static/js/2.fae46c7f.chunk.js": "/WirexGame/static/js/2.fae46c7f.chunk.js",
-    "static/js/2.fae46c7f.chunk.js.map": "/WirexGame/static/js/2.fae46c7f.chunk.js.map",
+    "static/js/2.8e34d649.chunk.js": "/WirexGame/static/js/2.8e34d649.chunk.js",
+    "static/js/2.8e34d649.chunk.js.map": "/WirexGame/static/js/2.8e34d649.chunk.js.map",
     "index.html": "/WirexGame/index.html",
-    "precache-manifest.3aae23fff0d08558a17611ed99bfa5f7.js": "/WirexGame/precache-manifest.3aae23fff0d08558a17611ed99bfa5f7.js",
+    "precache-manifest.531211dc360e0254302ebbaf78df16cf.js": "/WirexGame/precache-manifest.531211dc360e0254302ebbaf78df16cf.js",
     "service-worker.js": "/WirexGame/service-worker.js",
-    "static/css/main.da198c18.chunk.css.map": "/WirexGame/static/css/main.da198c18.chunk.css.map",
-    "static/js/2.fae46c7f.chunk.js.LICENSE.txt": "/WirexGame/static/js/2.fae46c7f.chunk.js.LICENSE.txt",
+    "static/css/main.46c0f1d7.chunk.css.map": "/WirexGame/static/css/main.46c0f1d7.chunk.css.map",
+    "static/js/2.8e34d649.chunk.js.LICENSE.txt": "/WirexGame/static/js/2.8e34d649.chunk.js.LICENSE.txt",
     "static/media/backgroundText.png": "/WirexGame/static/media/backgroundText.6fed68fc.png",
+    "static/media/backsong.mp3": "/WirexGame/static/media/backsong.4861a882.mp3",
     "static/media/all.min.css": "/WirexGame/static/media/fa-solid-900.ee09ad75.woff",
     "static/media/MainMenu.module.css": "/WirexGame/static/media/img.20f75f88.jpg",
     "static/media/img1.png": "/WirexGame/static/media/img1.0df9e921.png",
@@ -53,8 +54,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.863e0236.js",
-    "static/js/2.fae46c7f.chunk.js",
-    "static/css/main.da198c18.chunk.css",
-    "static/js/main.52a8ee7d.chunk.js"
+    "static/js/2.8e34d649.chunk.js",
+    "static/css/main.46c0f1d7.chunk.css",
+    "static/js/main.5570ab52.chunk.js"
   ]
 }

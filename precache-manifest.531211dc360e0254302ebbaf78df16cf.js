@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e3aea99153ec8d5d3cde68cda07160e",
+    "revision": "3b5664a0f7b078a4aad104d464df445c",
     "url": "/WirexGame/index.html"
   },
   {
-    "revision": "ae605a04d9f02e54eb53",
-    "url": "/WirexGame/static/css/main.da198c18.chunk.css"
+    "revision": "f202ed7f13df0b87e189",
+    "url": "/WirexGame/static/css/main.46c0f1d7.chunk.css"
   },
   {
-    "revision": "c009a24b2283373006a9",
-    "url": "/WirexGame/static/js/2.fae46c7f.chunk.js"
+    "revision": "2ed5d228ec48150f59d1",
+    "url": "/WirexGame/static/js/2.8e34d649.chunk.js"
   },
   {
     "revision": "ffa35a34964860fdc97ed79ca9abd27c",
-    "url": "/WirexGame/static/js/2.fae46c7f.chunk.js.LICENSE.txt"
+    "url": "/WirexGame/static/js/2.8e34d649.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae605a04d9f02e54eb53",
-    "url": "/WirexGame/static/js/main.52a8ee7d.chunk.js"
+    "revision": "f202ed7f13df0b87e189",
+    "url": "/WirexGame/static/js/main.5570ab52.chunk.js"
   },
   {
     "revision": "a9420d3bc21644b1177a",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6fed68fc65e9a063cbcb577b556b387a",
     "url": "/WirexGame/static/media/backgroundText.6fed68fc.png"
+  },
+  {
+    "revision": "4861a882ab3654845bd767fa9b07065d",
+    "url": "/WirexGame/static/media/backsong.4861a882.mp3"
   },
   {
     "revision": "085b1dd8427dbeff10bd55410915a3f6",
